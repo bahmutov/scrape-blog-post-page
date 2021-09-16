@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import { scrapeToAlgoliaRecord } from './utils'
+
 const { _ } = Cypress
 
 const cleanCharacters = (s) => s.replace(/[\/#]/g, '').trim()
@@ -40,6 +42,10 @@ it('loads', () => {
   // we also keep track of the last element with "id" to use
   // as the URL of the record
   let anchor = null
+  const baseUrl = 'https://glebbahmutov.com/blog/code-coverage-for-chat-tests/'
+  // take the last part of the url which is the post name
+  const _tags = [_.last(_.filter(_.split(baseUrl, '/'), Boolean))]
+  let url = baseUrl
 
   const records = []
 
@@ -75,15 +81,21 @@ it('loads', () => {
       const anchorMaybe = getAnchor(el)
       if (anchorMaybe) {
         anchor = anchorMaybe
+        url = `${baseUrl}#${anchor}`
       }
 
       // TODO: filter text, filter duplicates, prevent empty records
       const record = _.clone(hierarchy)
       record.anchor = anchor
+      record.url = url
+      record._tags = _tags
       records.push(record)
 
       console.log('%d %s %o', i, matchedSelectorLevel, el)
       console.log('%o', record)
+
+      const algoliaRecord = scrapeToAlgoliaRecord(record)
+      console.log(algoliaRecord)
     })
   })
 })
