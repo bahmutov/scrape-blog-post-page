@@ -1,7 +1,8 @@
 {
   "name": "scrape-blog-post-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scraping my blog posts using Cypress to send to Algolia search index",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
