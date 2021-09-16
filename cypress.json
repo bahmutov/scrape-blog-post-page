@@ -2,5 +2,14 @@
   "fixturesFolder": false,
   "supportFile": false,
   "pluginsFile": false,
-  "ignoreTestFiles": "utils.js"
+  "ignoreTestFiles": "utils.js",
+  "baseUrl": "https://glebbahmutov.com/blog/",
+  "viewportHeight": 1400,
+  "blockHosts": [
+    "www.google-analytics.com",
+    "disqus.com",
+    "*disqus.com",
+    "*taboola.com",
+    "*carbonads.com"
+  ]
 }
