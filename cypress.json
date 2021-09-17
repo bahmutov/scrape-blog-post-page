@@ -1,7 +1,6 @@
 {
   "fixturesFolder": false,
   "supportFile": false,
-  "pluginsFile": false,
   "ignoreTestFiles": "utils.js",
   "baseUrl": "https://glebbahmutov.com/blog/",
   "viewportHeight": 1400,

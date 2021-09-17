@@ -1,3 +1,4 @@
+// @ts-check
 /// <reference types="cypress" />
 
 import { scrapeToAlgoliaRecord } from './utils'
@@ -16,6 +17,8 @@ const getAnchor = (el) => {
 }
 
 it('loads', () => {
+  const outputFolder = 'scraped'
+
   // cy.visit('post.html')
   cy.visit('/code-coverage-for-chat-tests/')
   cy.location('href').then((baseUrl) => {
@@ -45,7 +48,8 @@ it('loads', () => {
     let anchor = null
     // const baseUrl = 'https://glebbahmutov.com/blog/code-coverage-for-chat-tests/'
     // take the last part of the url which is the post name
-    const _tags = [_.last(_.filter(_.split(baseUrl, '/'), Boolean))]
+    const slug = _.last(_.filter(_.split(baseUrl, '/'), Boolean))
+    const _tags = [slug]
     let url = baseUrl
 
     const records = []
@@ -67,6 +71,7 @@ it('loads', () => {
           hierarchy.text = null
         }
 
+        // @ts-ignore
         const textContentMaybe = el.innerText || el.content
         if (!textContentMaybe) {
           // maybe it is an element with just an image
@@ -90,14 +95,20 @@ it('loads', () => {
         record.anchor = anchor
         record.url = url
         record._tags = _tags
-        records.push(record)
 
         console.log('%d %s %o', i, matchedSelectorLevel, el)
         console.log('%o', record)
 
         const algoliaRecord = scrapeToAlgoliaRecord(record)
         console.log(algoliaRecord)
+        records.push(algoliaRecord)
       })
+
+      cy.writeFile(`${outputFolder}/${slug}-algolia-objects.json`, records)
+
+      // let's upload the records to Algolia
+      // see the task registered in the cypress/plugins/index.js file
+      cy.task('uploadRecords', { records, slug })
     })
   })
 })

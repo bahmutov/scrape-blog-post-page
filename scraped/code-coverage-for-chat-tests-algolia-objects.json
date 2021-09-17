@@ -1,0 +1,1458 @@
+[
+  {
+    "anchor": null,
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": null,
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "lvl0"
+  },
+  {
+    "anchor": null,
+    "content": "How to measure fullstack code coverage from Cypress tests.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": null,
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": null,
+    "content": "In several blog posts I have shown how to test a Socket.io chat application using Cypress.io",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": null,
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": null,
+    "content": "In this blog post I will show how to collect code coverage in each case. From the code coverage reports, we will see that using separate test runners to simulate two users is not necessary. The application code is already exercised when using a separate socket connection to simulate the second user. Even a test with 1 user going through the user interface covers 100% of the code, because every message, even own message, goes through the server before being shown.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": null,
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": null,
+    "content": "🎁 You can find the source code in the repo bahmutovcypress-socketio-chat. You can also flip through the slides for the presentation covering this topic at slides.combahmutove2e-for-chat.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": null,
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "lvl1"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "The application includes the source code using a script tag",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "From the server, we can instrument the scriptsapp.js source code before sending",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "To check if the code has been instrumented, inspect the window.__coverage__ object from the DevTools console.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "Code coverage object exists",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": null
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "We can also instrument the server code using nyc module following the Instrument backend code section of the Cypress docs.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "Change the start server command",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "And expose the code coverage endpoint",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "https:github.comcypress-iocode-coverageinstrument-backend-code",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "* istanbul ignore next *",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "To ensure the code coverage report always includes the client and the server code, add to the package.json \"nyc\" options",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "code-instrumentation",
+    "content": "Tip: if you need to instrument your application code, find an example matching your situation among the examples in the Cypress code coverage plugin repo.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#code-instrumentation",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Code instrumentation",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "Our first spec uses a single test runner to send the message to itself.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "<reference types=\"cypress\" >",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "https:on.cypress.iovisit",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "when the application asks for the name",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "return \"Cy\" using https:on.cypress.iostub",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "make sure the greeting message is shown",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "try posting a message",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "The generated HTML report shows full client-side code coverage.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "First spec code coverage report",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage object exists"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec code coverage report"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "Drill down into the server file to see the two missed lines",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec code coverage report"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "First spec never disconnects from the server",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec code coverage report"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "the-first-spec",
+    "content": "Unfortunately, it is hard to test the user disconnect if our page is the only one present.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#the-first-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "The first spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "In another spec we replace the actual socket connection with the Mock Socket object.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "<reference types=\"cypress\" >",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "these tests \"trick\" the application by injecting",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "a mock socket from the test into the application",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "instead of letting the application connect to the real one",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "store info about the client connected from the page",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "broadcast to everyone, mimicking the index.js server",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "delete any cache headers to get a fresh response",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "the browser is the 1st user",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "our code intercept has worked",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "verify we have received the username",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "use .should(callback) to retry",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "until the variable username has been set",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "try sending a message via page UI",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "verify the mock socket has received the message",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "emit message from the test socket",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "to make sure the page shows it",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "Because we do not run any socket commands on the server, our server-side coverage drops.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "Code coverage summary when mocking the Socket",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "First spec never disconnects from the server"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage summary when mocking the Socket"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "The server report shows no socket callbacks have executed.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage summary when mocking the Socket"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": "When mocking the socket client-side, the server is not used",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "Code coverage summary when mocking the Socket"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "mock-socket-spec",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#mock-socket-spec",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Mock socket spec",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "Let's run the test that uses the UI page as the first user, while connecting to the server through another socket connection to simulate the 2nd user. For example, we can open that 2nd socket connection from the spec.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "<reference types=\"cypress\" >",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "the browser is the 1st user",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "make sure the greeting message is shown",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "and now connect to the server using 2nd user",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "by opening a new Socket connection from the same browser window",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "keep track of the last message sent by the server",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "the page shows that the second user has joined the chat",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "the second user can send a message and the page shows it",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "when the first user sends the message from the page",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "the second user receives it via socket",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "verify the web page shows the message",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "this ensures we can ask the 2nd user for its last message",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "and it should already be there",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "place the assertions in a should callback",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "to retry them, maybe there is a delay in delivery",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "using \"include\" assertion since the server adds HTML markup",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "Note that this test disconnects the second user and confirms the page shows the right message.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "The Cypress test UI",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "When mocking the socket client-side, the server is not used"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The Cypress test UI"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "The fullstack code coverage achieves 100% for both the client and the server files.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The Cypress test UI"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "The code coverage report shows 100% code coverage",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The Cypress test UI"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The code coverage report shows 100% code coverage"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "The server really exercised all Socket commands.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The code coverage report shows 100% code coverage"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": "The server coverage during the test",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The code coverage report shows 100% code coverage"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "second-user-via-socket-connection",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#second-user-via-socket-connection",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Second user via socket connection",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": null,
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "lvl4"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "Now let's switch to the more complicated way of verifying the chat between two users - by running two test runners. Does it give us any more confidence? Does it cover any more code lines? Well, it would be hard to cover more lines, since we already have reached 100% code coverage!",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "We will run two test runners and they will wait for each other using checkpoints. For example, here are the ends of the two spec files where the first user disconnects by going away from the page localhost:8080 and the second user confirms it sees the message \"First left the chat\"",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "disconnect from the chat by visiting the blank page",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "the first user will disconnect now",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "The code coverage stays the same: more lines might be repeated, but no new lines can possible be added to the already full coverage.",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  },
+  {
+    "anchor": "run-two-test-runners",
+    "content": "Happy fullstack testing!",
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/#run-two-test-runners",
+    "_tags": [
+      "code-coverage-for-chat-tests"
+    ],
+    "hierarchy": {
+      "lvl0": "Code Coverage For Chat App",
+      "lvl1": "Run two test runners",
+      "lvl2": null,
+      "lvl3": null,
+      "lvl4": "The server coverage during the test"
+    },
+    "type": "content"
+  }
+]
