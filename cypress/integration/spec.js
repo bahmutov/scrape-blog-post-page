@@ -16,11 +16,14 @@ const getAnchor = (el) => {
   }
 }
 
-it('loads', () => {
+it('scrapes the blog post', () => {
   const outputFolder = 'scraped'
 
   // cy.visit('post.html')
-  cy.visit('/code-coverage-for-chat-tests/')
+  // cy.visit('/code-coverage-for-chat-tests/')
+  const post = Cypress.env('post') || '/code-coverage-for-chat-tests/'
+  cy.visit(post)
+
   cy.location('href').then((baseUrl) => {
     const selectors = {
       lvl0: 'meta[property="og:title"]',

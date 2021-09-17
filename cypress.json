@@ -4,6 +4,7 @@
   "ignoreTestFiles": "utils.js",
   "baseUrl": "https://glebbahmutov.com/blog/",
   "viewportHeight": 1400,
+  "video": false,
   "blockHosts": [
     "www.google-analytics.com",
     "disqus.com",
