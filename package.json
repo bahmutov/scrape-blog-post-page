@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "algoliasearch": "^4.10.5",
+    "cheerio": "^1.0.0-rc.10",
     "cypress": "^8.4.0",
-    "prettier": "^2.4.1"
+    "got": "^11.8.2",
+    "prettier": "^2.4.1",
+    "simple-xml-to-json": "^1.0.8"
   }
 }

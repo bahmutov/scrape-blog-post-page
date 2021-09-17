@@ -21,8 +21,8 @@ it('scrapes the blog post', () => {
 
   // cy.visit('post.html')
   // cy.visit('/code-coverage-for-chat-tests/')
-  const post = Cypress.env('post') || '/code-coverage-for-chat-tests/'
-  cy.visit(post)
+  // const post = Cypress.env('post') || '/code-coverage-for-chat-tests/'
+  cy.visit('/')
 
   cy.location('href').then((baseUrl) => {
     const selectors = {
