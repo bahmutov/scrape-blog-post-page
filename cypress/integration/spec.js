@@ -52,6 +52,7 @@ it('scrapes the blog post', () => {
     // const baseUrl = 'https://glebbahmutov.com/blog/code-coverage-for-chat-tests/'
     // take the last part of the url which is the post name
     const slug = _.last(_.filter(_.split(baseUrl, '/'), Boolean))
+    const scrapedTimestamp = +new Date()
     const _tags = [slug]
     let url = baseUrl
 
@@ -103,6 +104,8 @@ it('scrapes the blog post', () => {
         console.log('%o', record)
 
         const algoliaRecord = scrapeToAlgoliaRecord(record)
+        algoliaRecord.scrapedTimestamp = scrapedTimestamp
+
         console.log(algoliaRecord)
         records.push(algoliaRecord)
       })

@@ -1,3 +1,5 @@
+const { getScrapedTimestamp } = require('./check-date')
+
 const posts = ['/test-plain-or-markdown-file/', '/skip-cypress-install-on-ci/']
 
 const { APPLICATION_ID, ADMIN_API_KEY, INDEX_NAME } = process.env
@@ -14,6 +16,12 @@ async function scrapePresentations(urls) {
 
   const post = urls.shift()
   console.log(`Scraping %s, %d left`, post, urls.length)
+  const lastScraped = await getScrapedTimestamp(post)
+  if (lastScraped) {
+    const lastScrapedDate = new Date(lastScraped)
+    console.log('blog %s was last scraped at %s', post, lastScrapedDate)
+  }
+
   await cypress.run({
     env: {
       post,
