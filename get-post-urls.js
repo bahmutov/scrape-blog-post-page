@@ -1,4 +1,5 @@
 const got = require('got')
+const fs = require('fs')
 const cheerio = require('cheerio')
 const { URL } = require('url')
 
@@ -32,7 +33,9 @@ module.exports = { getBlogPostUrls }
 if (!module.parent) {
   getBlogPostUrls()
     .then((links) => {
-      console.log(links)
+      const filename = 'blog-post-urls.json'
+      fs.writeFileSync(filename, JSON.stringify(links, null, 2) + '\n')
+      console.log('saved %d links to %s', links.length, filename)
     })
     .catch((err) => {
       console.error(err)
