@@ -28,3 +28,13 @@ async function getBlogPostUrls() {
 }
 
 module.exports = { getBlogPostUrls }
+
+if (!module.parent) {
+  getBlogPostUrls()
+    .then((links) => {
+      console.log(links)
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+}
