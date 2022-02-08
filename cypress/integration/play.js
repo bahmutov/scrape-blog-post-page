@@ -1,31 +1,26 @@
+// @ts-check
 /// <reference types="cypress" />
 
 it('finds post', { baseUrl: null }, () => {
   cy.visit('post.html')
 
-  const sectionAnchors = {}
-  const h2Elements = []
-  let currentH2 = null
+  function hasAnchor($el) {
+    const $anchor = $el.find('[id]')
+    return $anchor.length > 0
+  }
 
-  cy.get('article .article-inner h2:has([id])')
-    .each(($h2) => {
-      const $anchor = $h2.find('[id]')
-      const anchor = $anchor.attr('id')
-      const title = $anchor.text()
-      console.log(anchor, title)
+  function getAnchor($el) {
+    const $anchor = $el.find('[id]')
+    return $anchor.attr('id')
+  }
 
-      const node = $h2[0]
-      sectionAnchors[anchor] = {
-        anchor,
-        title,
-        node,
-        nodes: [],
-      }
-      h2Elements.push(node)
-    })
-    .then(() => {
-      console.log(sectionAnchors)
-    })
+  let records = []
+  let currentRecord = {
+    anchor: null,
+    text: '',
+  }
+  records.push(currentRecord)
+
   // now process all article elements, grouping them by the anchor
   cy.get(
     `header.article-header h2,
@@ -33,11 +28,29 @@ it('finds post', { baseUrl: null }, () => {
     .article .article-inner .article-entry p,
     .article .article-inner .article-entry figure.highlight .comment
   `,
-  ).each(($snippet) => {
-    console.log($snippet[0])
-    if (h2Elements.includes[$snippet[0]]) {
-      console.log('reached', $snippet.text())
-      currentH2 = $snippet[0]
-    }
-  })
+  )
+    .each(($snippet) => {
+      if (hasAnchor($snippet)) {
+        const anchor = getAnchor($snippet)
+        console.log('anchor element', anchor)
+        currentRecord = {
+          anchor,
+          text: '',
+        }
+        records.push(currentRecord)
+      } else {
+        currentRecord.text += '\n' + $snippet.text().replace(/\s+/g, ' ')
+      }
+    })
+    .then(() => {
+      // TODO check each record to make sure its size is within the limit
+      records.forEach((record) => {
+        record.text = record.text.trim()
+      })
+
+      records = records.filter((record) => record.text.length > 0)
+
+      console.log('records')
+      console.log(records)
+    })
 })
