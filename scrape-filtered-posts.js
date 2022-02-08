@@ -58,7 +58,7 @@ async function scrapeOnePost(url) {
       slug,
       outputRecordsFilename,
     },
-    spec: 'cypress/integration/spec.js',
+    spec: 'cypress/integration/spec2.js',
   })
 
   const records = JSON.parse(fs.readFileSync(outputRecordsFilename))

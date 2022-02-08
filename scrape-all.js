@@ -50,7 +50,7 @@ Promise.all([getSiteMap(), getBlogPostUrls()])
         config: {
           baseUrl: postUrl,
         },
-        spec: 'cypress/integration/spec.js',
+        spec: 'cypress/integration/spec2.js',
       })
 
       // scrape the rest of the presentations

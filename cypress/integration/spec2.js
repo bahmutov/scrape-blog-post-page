@@ -24,7 +24,8 @@ const cleanCharacters = (s) => s.replace(/[\/#]/g, '').trim()
 it('scrapes the blog post 2', () => {
   const outputFolder = 'scraped'
 
-  cy.visit('/react-app-actions/')
+  // cy.visit('/react-app-actions/')
+  cy.visit('/')
 
   cy.location('href').then((baseUrl) => {
     // take the last part of the url which is the post name
@@ -49,18 +50,20 @@ it('scrapes the blog post 2', () => {
         headingRecords.push(titleRecord)
 
         // get the secondary headings
-        cy.get('.article .article-inner .article-entry h2').each(($h2) => {
-          const anchor = hasAnchor($h2) ? getAnchor($h2) : null
-          const record = scrapeToAlgoliaRecord({
-            anchor,
-            url: anchor ? `${baseUrl}#${anchor}` : baseUrl,
-            _tags,
-            lvl0,
-            lvl1: cleanCharacters($h2.text()),
+        cy.get('.article .article-inner .article-entry h2')
+          .should(_.noop) // there might be no headings
+          .each(($h2) => {
+            const anchor = hasAnchor($h2) ? getAnchor($h2) : null
+            const record = scrapeToAlgoliaRecord({
+              anchor,
+              url: anchor ? `${baseUrl}#${anchor}` : baseUrl,
+              _tags,
+              lvl0,
+              lvl1: cleanCharacters($h2.text()),
+            })
+            record.scrapedTimestamp = scrapedTimestamp
+            headingRecords.push(record)
           })
-          record.scrapedTimestamp = scrapedTimestamp
-          headingRecords.push(record)
-        })
 
         scrapeTextContent().then((textRecords) => {
           const records = textRecords.map((tr) => {
