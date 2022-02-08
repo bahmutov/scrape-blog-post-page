@@ -51,7 +51,9 @@ it('scrapes the blog post', () => {
     let anchor = null
     // const baseUrl = 'https://glebbahmutov.com/blog/code-coverage-for-chat-tests/'
     // take the last part of the url which is the post name
-    const slug = _.last(_.filter(_.split(baseUrl, '/'), Boolean))
+    const slug =
+      Cypress.env('slug') || _.last(_.filter(_.split(baseUrl, '/'), Boolean))
+    cy.task('print', `scraping ${baseUrl} with slug ${slug}`)
     const scrapedTimestamp = +new Date()
     const _tags = [slug]
     let url = baseUrl
@@ -85,6 +87,10 @@ it('scrapes the blog post', () => {
         if (!cleanedText) {
           return
         }
+        if (cleanedText === '**') {
+          // happens when there is a JSDoc
+          return
+        }
 
         hierarchy[matchedSelectorLevel] = cleanedText
 
@@ -110,11 +116,15 @@ it('scrapes the blog post', () => {
         records.push(algoliaRecord)
       })
 
-      cy.writeFile(`${outputFolder}/${slug}-algolia-objects.json`, records)
+      const filename =
+        Cypress.env('outputRecordsFilename') ||
+        `${outputFolder}/${slug}-algolia-objects.json`
+      cy.writeFile(filename, records)
+      cy.task('print', `saved ${filename} with ${records.length} records`)
 
       // let's upload the records to Algolia
       // see the task registered in the cypress/plugins/index.js file
-      cy.task('uploadRecords', { records, slug })
+      // cy.task('uploadRecords', { records, slug })
     })
   })
 })

@@ -2,7 +2,7 @@ const fs = require('fs')
 const allPosts = require('./blog-post-urls.json').slice(0, 3)
 console.log('checking %d posts if they are scraped', allPosts.length)
 
-const { markScraped, wasScraped } = require('was-it-scraped')
+const { wasScraped } = require('was-it-scraped')
 
 async function checkScrapeStatus(urls) {
   const results = []

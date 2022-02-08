@@ -2,3 +2,4 @@ node_modules/
 .as-a.ini
 scraped/
 cypress/videos/
+.DS_Store
