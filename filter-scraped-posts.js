@@ -1,5 +1,5 @@
 const fs = require('fs')
-const allPosts = require('./blog-post-urls.json').slice(0, 20)
+const allPosts = require('./blog-post-urls.json').slice(0, 250)
 console.log('checking %d posts if they are scraped', allPosts.length)
 
 const { wasScraped } = require('was-it-scraped')
