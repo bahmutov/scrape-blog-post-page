@@ -7,8 +7,8 @@
 To see all Cypress blog post URLs
 
 ```text
-$ npm run demo:list-posts
-# saved blog-post-urls.json with the list of urls
+$ node ./get-modified-post-urls
+# saved blog-post-urls.json with the list of urls and the modified date
 
 $ as-a . node ./filter-scraped-posts
 # reads the blog-post-urls.json, checks which posts were scraped
