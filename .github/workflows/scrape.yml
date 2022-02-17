@@ -3,25 +3,42 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # scrape any new blog posts every night
+    - cron: '0 1 * * *'
 jobs:
   scrape:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
+      - name: Checkout 🛎
         uses: actions/checkout@v2
 
       # Install NPM dependencies, cache them correctly
       # https://github.com/cypress-io/github-action
-      - name: Install dependencies
+      - name: Install dependencies 📦
         uses: cypress-io/github-action@v2
         with:
           runTests: false
 
-      - name: Get modified posts
+      - name: Get modified posts 📰
         run: node ./get-modified-post-urls
 
-      - name: Filter scraped posts
+      - name: Filter scraped posts 📤
         run: node ./filter-scraped-posts
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
+      - name: Show list of posts to scrape 🖨
+        run: cat need-scraping.json
+
+      - run: Scrape the changed posts 🚀
+        run: node ./scrape-filtered-posts
+        env:
+          # for updating the scraped timestamps
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          # for updating the Algolia index
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+          INDEX_NAME: ${{ secrets.INDEX_NAME }}
+          ADMIN_API_KEY: ${{ secrets.ADMIN_API_KEY }}
