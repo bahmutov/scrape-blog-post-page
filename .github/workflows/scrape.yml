@@ -1,0 +1,27 @@
+name: Scrape
+on:
+  push:
+    branches:
+      - main
+jobs:
+  scrape:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Install NPM dependencies, cache them correctly
+      # https://github.com/cypress-io/github-action
+      - name: Install dependencies
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+
+      - name: Get modified posts
+        run: node ./get-modified-post-urls
+
+      - name: Filter scraped posts
+        run: node ./filter-scraped-posts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
