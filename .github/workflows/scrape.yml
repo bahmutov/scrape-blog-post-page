@@ -32,7 +32,7 @@ jobs:
       - name: Show list of posts to scrape 🖨
         run: cat need-scraping.json
 
-      - run: Scrape the changed posts 🚀
+      - name: Scrape the changed posts 🚀
         run: node ./scrape-filtered-posts
         env:
           # for updating the scraped timestamps
