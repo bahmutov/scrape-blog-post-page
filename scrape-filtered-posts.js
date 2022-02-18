@@ -73,4 +73,7 @@ async function scrapeUrls(urls) {
   }
 }
 
-scrapeUrls(urlsToScrape).catch(console.error)
+scrapeUrls(urlsToScrape).catch((err) => {
+  console.error(err)
+  process.exit(1)
+})
