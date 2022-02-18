@@ -2,6 +2,8 @@
 
 > Scraping my blog posts using Cypress to send to Algolia search index
 
+Read the blog post [Incremental Blog Scraping](https://glebbahmutov.com/blog/incremental-post-scraping/)
+
 ## Scripts
 
 To see all Cypress blog post URLs
