@@ -25,7 +25,7 @@ Note: to check if the blog post needs scraping, I use [was-it-scraped](https://g
 
 ## Scraping on CI
 
-The same steps for scraping are performed on CI, see the [.github/workflows/scrape.yml](./.github/workflows/scrape.yml) workflow.
+The same steps for scraping are performed on CI, see the [.github/workflows/scrape.yml](./.github/workflows/scrape.yml) workflow. If scraping stops because there were no commits, push a new commit.
 
 ## Small print
 
