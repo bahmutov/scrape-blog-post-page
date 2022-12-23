@@ -1,5 +1,7 @@
 name: Scrape
 on:
+  # you can manually trigger the workflow
+  workflow_dispatch:
   push:
     branches:
       - main
