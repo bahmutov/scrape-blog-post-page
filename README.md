@@ -9,7 +9,7 @@ Read the blog post [Incremental Blog Scraping](https://glebbahmutov.com/blog/inc
 To see all Cypress blog post URLs
 
 ```text
-$ node ./get-modified-post-urls
+$ node ./src/get-modified-post-urls
 # saved blog-post-urls.json with the list of urls and the modified date
 
 $ as-a . node ./filter-scraped-posts

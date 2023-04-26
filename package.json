@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Scraping my blog posts using Cypress to send to Algolia search index",
   "private": true,
-  "main": "index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo:list-posts": "node ./get-post-urls",
@@ -14,14 +16,14 @@
   "license": "MIT",
   "devDependencies": {
     "algoliasearch": "^4.10.5",
-    "cheerio": "^1.0.0-rc.10",
     "cypress": "^9.7.0",
-    "got": "^11.8.2",
     "prettier": "^2.4.1",
-    "simple-xml-to-json": "^1.0.8",
     "was-it-scraped": "^1.0.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.2",
+    "simple-xml-to-json": "^1.0.8",
     "typesense": "^1.1.2"
   }
 }
