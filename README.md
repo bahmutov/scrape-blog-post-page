@@ -1,4 +1,4 @@
-# scrape-blog-post-page [![Scrape](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/scrape.yml/badge.svg?branch=main)](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/scrape.yml) ![cypress version](https://img.shields.io/badge/cypress-9.7.0-brightgreen)
+# scrape-blog-post-page [![Scrape](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/scrape.yml/badge.svg?branch=main)](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/scrape.yml) ![cypress version](https://img.shields.io/badge/cypress-9.7.0-brightgreen) [![main](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/bahmutov/scrape-blog-post-page/actions/workflows/main.yml)
 
 > Scraping my blog posts using Cypress to send to Algolia search index
 
