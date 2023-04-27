@@ -23,7 +23,7 @@ jobs:
           runTests: false
 
       - name: Get modified posts 📰
-        run: node ./src/get-modified-post-urls
+        run: node ./bin/get-modified-post-urls
 
       - name: Filter scraped posts 📤
         run: node ./filter-scraped-posts

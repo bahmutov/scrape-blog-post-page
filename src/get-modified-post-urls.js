@@ -3,7 +3,8 @@ const fs = require('fs')
 const { getBlogPostUrls } = require('./get-post-urls')
 const { getSiteMap } = require('./get-sitemap')
 
-Promise.all([getSiteMap(), getBlogPostUrls()]).then(([modified, posts]) => {
+async function getModifiedPostUrls(saveFilename) {
+  const [modified, posts] = await Promise.all([getSiteMap(), getBlogPostUrls()])
   const cypressPostsWithModified = {}
   posts.forEach((url) => {
     if (!modified[url]) {
@@ -13,14 +14,17 @@ Promise.all([getSiteMap(), getBlogPostUrls()]).then(([modified, posts]) => {
     }
   })
 
-  const filename = 'blog-post-urls.json'
-  fs.writeFileSync(
-    filename,
-    JSON.stringify(cypressPostsWithModified, null, 2) + '\n',
-  )
-  console.log(
-    'saved %d links to %s',
-    Object.keys(cypressPostsWithModified).length,
-    filename,
-  )
-})
+  if (saveFilename) {
+    const text = JSON.stringify(cypressPostsWithModified, null, 2) + '\n'
+    fs.writeFileSync(saveFilename, text)
+    console.log(
+      'saved %d links to %s',
+      Object.keys(cypressPostsWithModified).length,
+      saveFilename,
+    )
+  }
+
+  return cypressPostsWithModified
+}
+
+module.exports = { getModifiedPostUrls }

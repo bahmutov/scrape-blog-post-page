@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Scraping my blog posts using Cypress to send to Algolia search index",
   "private": true,
+  "main": "src/index.js",
   "files": [
+    "bin",
     "src"
   ],
   "scripts": {
