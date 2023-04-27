@@ -27,5 +27,12 @@
     "got": "^11.8.2",
     "simple-xml-to-json": "^1.0.8",
     "typesense": "^1.1.2"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
   }
 }
