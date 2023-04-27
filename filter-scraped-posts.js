@@ -1,21 +1,17 @@
 const fs = require('fs')
-// an object with [url] => [modified] where modified is "YYYY-MM-DD"
+// a list of post information objects where modified is "YYYY-MM-DD"
 const allPosts = require('./blog-post-urls.json')
-console.log(
-  'checking %d posts if they are scraped',
-  Object.keys(allPosts).length,
-)
+console.log('checking %d posts if they are scraped', allPosts.length)
 
 const { wasScraped, wasScrapedAfter } = require('was-it-scraped')
 
-async function checkScrapeStatus(urlsModified) {
-  const urls = Object.keys(urlsModified)
+async function checkScrapeStatus(posts) {
   const results = []
-  for (let url of urls) {
-    const modified = new Date(urlsModified[url])
-    const scraped = await wasScrapedAfter(url, modified)
+  for (const post of posts) {
+    const modified = new Date(post.modified)
+    const scraped = await wasScrapedAfter(post.url, modified)
     if (!scraped) {
-      results.push(url)
+      results.push(post.url)
     }
   }
 

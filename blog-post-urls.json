@@ -1,280 +1,1670 @@
-{
-  "https://glebbahmutov.com/blog/cypress-slash-command/": "2023-04-25",
-  "https://glebbahmutov.com/blog/cypress-todomvc-questions/": "2023-04-24",
-  "https://glebbahmutov.com/blog/simplify-calendar-test/": "2023-04-20",
-  "https://glebbahmutov.com/blog/pass-values-between-tests/": "2023-04-14",
-  "https://glebbahmutov.com/blog/cloudscape-select/": "2023-04-12",
-  "https://glebbahmutov.com/blog/testing-the-swag-store-course/": "2023-04-20",
-  "https://glebbahmutov.com/blog/full-cy-code-coverage/": "2023-04-06",
-  "https://glebbahmutov.com/blog/fix-for-cypress-plugin-events/": "2023-04-03",
-  "https://glebbahmutov.com/blog/cypress-level-up-workshop/": "2023-03-24",
-  "https://glebbahmutov.com/blog/retry-or-not/": "2023-03-22",
-  "https://glebbahmutov.com/blog/upgrade-cypress-v9-to-v12/": "2023-03-13",
-  "https://glebbahmutov.com/blog/minimize-mailosaur-use/": "2023-03-06",
-  "https://glebbahmutov.com/blog/trigger-cypress-specs/": "2023-03-01",
-  "https://glebbahmutov.com/blog/split-react-native-component-tests/": "2023-02-28",
-  "https://glebbahmutov.com/blog/crawl-weather/": "2023-02-26",
-  "https://glebbahmutov.com/blog/child-window-closed/": "2023-02-14",
-  "https://glebbahmutov.com/blog/debug-cy-get-and-contains/": "2023-02-10",
-  "https://glebbahmutov.com/blog/setup-cypress-data/": "2023-02-07",
-  "https://glebbahmutov.com/blog/two-cypress-tricks/": "2023-02-05",
-  "https://glebbahmutov.com/blog/react-native-web-component-testing/": "2023-02-28",
-  "https://glebbahmutov.com/blog/trying-arrow-js/": "2023-02-02",
-  "https://glebbahmutov.com/blog/csrf-testing/": "2023-02-01",
-  "https://glebbahmutov.com/blog/the-awesome-battle/": "2023-01-30",
-  "https://glebbahmutov.com/blog/stub-location/": "2023-01-28",
-  "https://glebbahmutov.com/blog/cypress-mochawesome/": "2023-01-28",
-  "https://glebbahmutov.com/blog/cypress-parallel-free/": "2023-01-26",
-  "https://glebbahmutov.com/blog/required-tags/": "2023-01-24",
-  "https://glebbahmutov.com/blog/cy-table/": "2023-01-21",
-  "https://glebbahmutov.com/blog/better-cypress-log/": "2023-01-13",
-  "https://glebbahmutov.com/blog/load-cypress-env-settings/": "2023-02-04",
-  "https://glebbahmutov.com/blog/cypress-env-variable/": "2023-01-10",
-  "https://glebbahmutov.com/blog/trace-changed-specs/": "2023-01-20",
-  "https://glebbahmutov.com/blog/cypress-soft-assertions/": "2022-12-19",
-  "https://glebbahmutov.com/blog/run-failed-tests/": "2022-12-15",
-  "https://glebbahmutov.com/blog/cypress-mailosaur/": "2023-03-04",
-  "https://glebbahmutov.com/blog/cypress-v12/": "2022-12-11",
-  "https://glebbahmutov.com/blog/skip-before-each-hook/": "2022-12-08",
-  "https://glebbahmutov.com/blog/slow-loading-jquery-plugin/": "2022-12-08",
-  "https://glebbahmutov.com/blog/test-polyfills/": "2022-12-06",
-  "https://glebbahmutov.com/blog/inject-env/": "2023-01-07",
-  "https://glebbahmutov.com/blog/spy-on-clipboard-copy/": "2022-11-26",
-  "https://glebbahmutov.com/blog/spy-on-postmessage/": "2022-11-22",
-  "https://glebbahmutov.com/blog/tips-and-tricks-for-e2e/": "2022-11-05",
-  "https://glebbahmutov.com/blog/mock-process-env-in-react/": "2022-10-28",
-  "https://glebbahmutov.com/blog/text-input/": "2022-10-27",
-  "https://glebbahmutov.com/blog/cypress-devextreme-example/": "2022-10-27",
-  "https://glebbahmutov.com/blog/spok-redux/": "2022-10-17",
-  "https://glebbahmutov.com/blog/split-test/": "2022-10-06",
-  "https://glebbahmutov.com/blog/test-bash-2022-ui-challenge/": "2022-10-03",
-  "https://glebbahmutov.com/blog/cypress-webkit/": "2022-09-27",
-  "https://glebbahmutov.com/blog/ui-to-api-to-app-actions/": "2022-09-25",
-  "https://glebbahmutov.com/blog/dependent-test/": "2023-04-14",
-  "https://glebbahmutov.com/blog/cypress-component-testing-vs-angular-test-harness/": "2022-10-25",
-  "https://glebbahmutov.com/blog/cypress-if/": "2022-09-07",
-  "https://glebbahmutov.com/blog/cypress-circleci-subfolders/": "2022-09-07",
-  "https://glebbahmutov.com/blog/test-using-apis/": "2023-04-13",
-  "https://glebbahmutov.com/blog/cypress-pdf/": "2022-08-10",
-  "https://glebbahmutov.com/blog/dark-cypress-tips/": "2022-08-02",
-  "https://glebbahmutov.com/blog/cypress-emulate-media/": "2022-07-23",
-  "https://glebbahmutov.com/blog/cypress-js-to-ts/": "2023-01-12",
-  "https://glebbahmutov.com/blog/cypress-out-of-band/": "2022-07-15",
-  "https://glebbahmutov.com/blog/component-code-coverage/": "2022-07-07",
-  "https://glebbahmutov.com/blog/stub-react-import/": "2023-01-28",
-  "https://glebbahmutov.com/blog/stub-form-that-opens-2nd-tab/": "2022-07-13",
-  "https://glebbahmutov.com/blog/sinon-edge/": "2022-06-30",
-  "https://glebbahmutov.com/blog/cypress-v10-env/": "2022-10-04",
-  "https://glebbahmutov.com/blog/cypress-v10-tips/": "2023-03-22",
-  "https://glebbahmutov.com/blog/test-app/": "2022-06-11",
-  "https://glebbahmutov.com/blog/run-all-specs-cypress-v10/": "2022-11-22",
-  "https://glebbahmutov.com/blog/mobile-tests/": "2022-05-19",
-  "https://glebbahmutov.com/blog/pass-reference/": "2022-05-16",
-  "https://glebbahmutov.com/blog/check-more-things/": "2022-05-11",
-  "https://glebbahmutov.com/blog/secrets-to-env/": "2022-05-09",
-  "https://glebbahmutov.com/blog/quick-click/": "2022-05-05",
-  "https://glebbahmutov.com/blog/spy-on-complex-method-call/": "2022-05-04",
-  "https://glebbahmutov.com/blog/send-data-to-the-test/": "2022-05-03",
-  "https://glebbahmutov.com/blog/login-words/": "2022-05-03",
-  "https://glebbahmutov.com/blog/listen-to-the-message/": "2022-04-28",
-  "https://glebbahmutov.com/blog/rendered-font/": "2022-04-26",
-  "https://glebbahmutov.com/blog/solve-the-first-click/": "2022-04-22",
-  "https://glebbahmutov.com/blog/cypress-module-problem/": "2022-04-22",
-  "https://glebbahmutov.com/blog/when-can-the-test-click/": "2022-04-22",
-  "https://glebbahmutov.com/blog/visible-in-the-viewport/": "2022-04-14",
-  "https://glebbahmutov.com/blog/app-loaded/": "2022-03-31",
-  "https://glebbahmutov.com/blog/stub-via-window/": "2023-01-28",
-  "https://glebbahmutov.com/blog/css-animations/": "2022-03-29",
-  "https://glebbahmutov.com/blog/negative-assertions-and-missing-states/": "2022-03-28",
-  "https://glebbahmutov.com/blog/fixture-and-request/": "2022-03-24",
-  "https://glebbahmutov.com/blog/cypress-tdd/": "2022-03-21",
-  "https://glebbahmutov.com/blog/better-cy-each/": "2022-03-16",
-  "https://glebbahmutov.com/blog/cypress-lighthouse/": "2022-03-10",
-  "https://glebbahmutov.com/blog/code-coverage-for-nextjs-app/": "2022-07-07",
-  "https://glebbahmutov.com/blog/cypress-and-launchdarkly/": "2022-09-23",
-  "https://glebbahmutov.com/blog/visualize-cypress-command-queue/": "2022-07-15",
-  "https://glebbahmutov.com/blog/replace-and-remove-cy-then-command/": "2022-02-22",
-  "https://glebbahmutov.com/blog/incremental-post-scraping/": "2022-02-18",
-  "https://glebbahmutov.com/blog/email-cypress-report/": "2023-03-04",
-  "https://glebbahmutov.com/blog/react-app-actions/": "2022-02-07",
-  "https://glebbahmutov.com/blog/react-state-from-e2e-tests/": "2022-02-05",
-  "https://glebbahmutov.com/blog/repeat-tests/": "2022-02-01",
-  "https://glebbahmutov.com/blog/cypress-history-api-example/": "2022-01-28",
-  "https://glebbahmutov.com/blog/wordle-page-objects/": "2022-01-27",
-  "https://glebbahmutov.com/blog/network-requests-with-cypress/": "2022-01-24",
-  "https://glebbahmutov.com/blog/pick-tests-using-pull-request/": "2022-05-24",
-  "https://glebbahmutov.com/blog/visit-non-html-page/": "2022-01-20",
-  "https://glebbahmutov.com/blog/know-your-tests/": "2022-01-14",
-  "https://glebbahmutov.com/blog/tag-tests/": "2022-09-26",
-  "https://glebbahmutov.com/blog/crawl-using-cypress/": "2022-01-07",
-  "https://glebbahmutov.com/blog/json-test-results/": "2022-01-03",
-  "https://glebbahmutov.com/blog/browser-filesystem-api/": "2021-12-28",
-  "https://glebbahmutov.com/blog/cyclope-intro/": "2021-12-22",
-  "https://glebbahmutov.com/blog/cypress-hosts-option/": "2023-01-10",
-  "https://glebbahmutov.com/blog/check-for-duplicates/": "2021-12-18",
-  "https://glebbahmutov.com/blog/cy-now-and-state/": "2021-12-17",
-  "https://glebbahmutov.com/blog/faster-user-creation/": "2021-12-15",
-  "https://glebbahmutov.com/blog/restart-server/": "2021-12-12",
-  "https://glebbahmutov.com/blog/cypress-timestamps/": "2022-12-01",
-  "https://glebbahmutov.com/blog/3rd-party/": "2021-12-09",
-  "https://glebbahmutov.com/blog/gh-reusable-workflows/": "2021-12-08",
-  "https://glebbahmutov.com/blog/spy-on-dom-methods/": "2021-11-23",
-  "https://glebbahmutov.com/blog/fp-cy-helpers/": "2022-01-09",
-  "https://glebbahmutov.com/blog/custom-assertions/": "2021-11-17",
-  "https://glebbahmutov.com/blog/flaky-cy-type/": "2021-11-16",
-  "https://glebbahmutov.com/blog/parallelism-parameter/": "2021-11-11",
-  "https://glebbahmutov.com/blog/test-sitemap/": "2022-01-04",
-  "https://glebbahmutov.com/blog/cypress-grep-filters/": "2023-02-04",
-  "https://glebbahmutov.com/blog/cypress-data-session/": "2023-02-04",
-  "https://glebbahmutov.com/blog/refactor-using-each/": "2021-10-19",
-  "https://glebbahmutov.com/blog/dynamic-api-tests-using-cypress-each/": "2023-02-04",
-  "https://glebbahmutov.com/blog/cypress-and-testrail/": "2022-08-10",
-  "https://glebbahmutov.com/blog/cypress-skills-ladder/": "2023-04-13",
-  "https://glebbahmutov.com/blog/faster-ci-feedback-on-circleci/": "2022-04-12",
-  "https://glebbahmutov.com/blog/faster-ci-feedback/": "2023-03-01",
-  "https://glebbahmutov.com/blog/request-graphql/": "2021-10-01",
-  "https://glebbahmutov.com/blog/dynamic-tests-from-fixture/": "2022-04-18",
-  "https://glebbahmutov.com/blog/test-plain-or-markdown-file/": "2022-01-20",
-  "https://glebbahmutov.com/blog/skip-cypress-install-on-ci/": "2021-09-06",
-  "https://glebbahmutov.com/blog/verify-phone-part-two/": "2021-09-13",
-  "https://glebbahmutov.com/blog/verify-phone-part-one/": "2021-09-04",
-  "https://glebbahmutov.com/blog/detached/": "2021-08-26",
-  "https://glebbahmutov.com/blog/scrape-slides/": "2021-08-21",
-  "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/": "2021-08-16",
-  "https://glebbahmutov.com/blog/test-video-play/": "2021-08-13",
-  "https://glebbahmutov.com/blog/mock-network-from-server/": "2021-08-10",
-  "https://glebbahmutov.com/blog/listen-to-events/": "2021-08-08",
-  "https://glebbahmutov.com/blog/test-pubsub/": "2021-08-06",
-  "https://glebbahmutov.com/blog/visit-blank-page-between-tests/": "2021-08-02",
-  "https://glebbahmutov.com/blog/burn-tests-on-circle/": "2021-12-13",
-  "https://glebbahmutov.com/blog/avoid-cypress-pyramid-of-doom/": "2023-04-14",
-  "https://glebbahmutov.com/blog/control-nextjs-data-during-tests/": "2022-08-24",
-  "https://glebbahmutov.com/blog/test-feature-flags/": "2022-03-04",
-  "https://glebbahmutov.com/blog/rn-test-for-navigation/": "2021-07-15",
-  "https://glebbahmutov.com/blog/test-app-using-the-keyboard/": "2021-07-12",
-  "https://glebbahmutov.com/blog/why-cy-log-prints-nothing/": "2023-01-13",
-  "https://glebbahmutov.com/blog/how-to-keep-cypress-tests-in-another-repo-with-circleci/": "2022-04-27",
-  "https://glebbahmutov.com/blog/cypress-second-tab/": "2023-03-13",
-  "https://glebbahmutov.com/blog/how-to-keep-cypress-tests-in-another-repo/": "2022-04-30",
-  "https://glebbahmutov.com/blog/cypress-real-events/": "2021-06-28",
-  "https://glebbahmutov.com/blog/sync-two-cypress-runners/": "2023-02-04",
-  "https://glebbahmutov.com/blog/sanity-test/": "2021-06-23",
-  "https://glebbahmutov.com/blog/testing-rn-todo-app/": "2021-07-11",
-  "https://glebbahmutov.com/blog/stubbing-the-non-configurable/": "2021-06-18",
-  "https://glebbahmutov.com/blog/testing-react-native-app-using-cypress/": "2023-02-03",
-  "https://glebbahmutov.com/blog/run-two-cypress-runners/": "2023-02-04",
-  "https://glebbahmutov.com/blog/cypress-vs-other-test-runners/": "2022-04-26",
-  "https://glebbahmutov.com/blog/test-socketio-chat-using-cypress/": "2023-02-04",
-  "https://glebbahmutov.com/blog/cypress-automation/": "2023-01-27",
-  "https://glebbahmutov.com/blog/burning-tests/": "2022-08-10",
-  "https://glebbahmutov.com/blog/npm-tips-and-tricks/": "2023-03-01",
-  "https://glebbahmutov.com/blog/answer-cypress-question/": "2021-06-15",
-  "https://glebbahmutov.com/blog/scrape-list-of-slides/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-request-and-cookies/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-mongo-with-cypress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/writing-tests-progress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-test-statuses/": "2021-06-15",
-  "https://glebbahmutov.com/blog/fixtures-in-custom-commands/": "2021-06-15",
-  "https://glebbahmutov.com/blog/stub-window-track/": "2021-06-15",
-  "https://glebbahmutov.com/blog/fast-esbuild/": "2021-06-15",
-  "https://glebbahmutov.com/blog/stub-window-open/": "2021-06-15",
-  "https://glebbahmutov.com/blog/organize-npm-scripts/": "2021-06-15",
-  "https://glebbahmutov.com/blog/write-cypress-preprocessor/": "2021-06-15",
-  "https://glebbahmutov.com/blog/canvas-testing/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-recurse/": "2023-02-04",
-  "https://glebbahmutov.com/blog/anchor-ping/": "2021-06-15",
-  "https://glebbahmutov.com/blog/tested-ecommerce/": "2021-06-15",
-  "https://glebbahmutov.com/blog/onbeforeunload/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-timezones/": "2021-06-15",
-  "https://glebbahmutov.com/blog/test-monorepo-apps/": "2021-06-15",
-  "https://glebbahmutov.com/blog/test-netlify/": "2023-04-13",
-  "https://glebbahmutov.com/blog/form-validation-in-cypress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/local-cypress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/solve-the-user-problem/": "2021-06-15",
-  "https://glebbahmutov.com/blog/parallel-cypress-tests-gh-action/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-geolocation/": "2021-06-15",
-  "https://glebbahmutov.com/blog/publishing-cypress-command/": "2022-07-28",
-  "https://glebbahmutov.com/blog/circle-ram-disk/": "2021-08-10",
-  "https://glebbahmutov.com/blog/negative-assertions/": "2022-03-27",
-  "https://glebbahmutov.com/blog/backend-coverage/": "2023-04-13",
-  "https://glebbahmutov.com/blog/writing-custom-cypress-command/": "2022-08-11",
-  "https://glebbahmutov.com/blog/split-spec/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-intercept-problems/": "2022-06-02",
-  "https://glebbahmutov.com/blog/cypress-timings/": "2021-06-15",
-  "https://glebbahmutov.com/blog/debug-visibility/": "2021-06-15",
-  "https://glebbahmutov.com/blog/repeat-to-fight-flake/": "2021-06-15",
-  "https://glebbahmutov.com/blog/do-not-let-cypress-cache-snowball/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cy-metaprogramming/": "2021-06-15",
-  "https://glebbahmutov.com/blog/universal-code-test/": "2021-06-15",
-  "https://glebbahmutov.com/blog/effective-react-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-csp-almost/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-wasm-example/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-and-xstate/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cy-route-vs-route2/": "2021-06-15",
-  "https://glebbahmutov.com/blog/smart-graphql-stubbing/": "2023-04-13",
-  "https://glebbahmutov.com/blog/wrap-cypress-using-npm/": "2021-06-15",
-  "https://glebbahmutov.com/blog/components-people-test/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-book/": "2021-06-15",
-  "https://glebbahmutov.com/blog/develop-preview-test/": "2021-06-15",
-  "https://glebbahmutov.com/blog/test-the-interface/": "2021-06-15",
-  "https://glebbahmutov.com/blog/why-cypress/": "2021-10-07",
-  "https://glebbahmutov.com/blog/first-vue-component-test/": "2021-06-15",
-  "https://glebbahmutov.com/blog/open-source-visual-testing-of-components/": "2021-06-15",
-  "https://glebbahmutov.com/blog/import-cypress-fixtures/": "2022-03-24",
-  "https://glebbahmutov.com/blog/tic-tac-toe-component-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/run-all-specs/": "2021-06-15",
-  "https://glebbahmutov.com/blog/my-vision-for-component-tests/": "2022-01-13",
-  "https://glebbahmutov.com/blog/cleaning-up-space/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-sentry-with-cypress/": "2021-09-16",
-  "https://glebbahmutov.com/blog/triple-tested/": "2021-06-15",
-  "https://glebbahmutov.com/blog/keep-passwords-secret-in-e2e-tests/": "2022-04-27",
-  "https://glebbahmutov.com/blog/cypress-talks/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-fiddle/": "2022-09-28",
-  "https://glebbahmutov.com/blog/testing-angular-application-via-app-actions/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-using-child-window/": "2021-06-15",
-  "https://glebbahmutov.com/blog/patching-cypress-cli-npm-module/": "2021-06-15",
-  "https://glebbahmutov.com/blog/fix-low-contrast-with-cypress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/detect-page-reload/": "2021-06-15",
-  "https://glebbahmutov.com/blog/realworld-app-action/": "2021-06-15",
-  "https://glebbahmutov.com/blog/api-testing-with-server-logs/": "2023-02-04",
-  "https://glebbahmutov.com/blog/run-cypress-included-from-docker-container/": "2021-06-15",
-  "https://glebbahmutov.com/blog/ssr-e2e/": "2022-12-09",
-  "https://glebbahmutov.com/blog/combined-end-to-end-and-unit-test-coverage/": "2021-06-15",
-  "https://glebbahmutov.com/blog/code-coverage-by-parcel/": "2021-06-15",
-  "https://glebbahmutov.com/blog/using-ts-aliases-in-cypress-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/code-coverage-for-e2e-tests/": "2021-10-06",
-  "https://glebbahmutov.com/blog/stub-navigator-api/": "2021-06-15",
-  "https://glebbahmutov.com/blog/chainsaws/": "2021-06-15",
-  "https://glebbahmutov.com/blog/readable-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-visually/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-a-chart/": "2021-06-15",
-  "https://glebbahmutov.com/blog/parallel-or-not/": "2021-06-15",
-  "https://glebbahmutov.com/blog/zeit-now-v2-workflow/": "2021-06-15",
-  "https://glebbahmutov.com/blog/use-typescript-with-cypress/": "2022-12-01",
-  "https://glebbahmutov.com/blog/cypress-is/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-should-callback/": "2022-02-25",
-  "https://glebbahmutov.com/blog/hyperapp-state-machine/": "2021-06-15",
-  "https://glebbahmutov.com/blog/element-coverage/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-jump/": "2021-06-15",
-  "https://glebbahmutov.com/blog/mock-graphql-with-lunar-in-cypress-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/js-equality-game/": "2021-06-15",
-  "https://glebbahmutov.com/blog/set-flag-to-start-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/run-and-group-tests/": "2021-06-15",
-  "https://glebbahmutov.com/blog/should-i-start-with-cypress/": "2021-10-07",
-  "https://glebbahmutov.com/blog/zeit-now-renovate-and-app/": "2021-06-15",
-  "https://glebbahmutov.com/blog/gatsby-netlify-circle-and-cypress/": "2021-06-15",
-  "https://glebbahmutov.com/blog/powerful-cy-task/": "2022-06-01",
-  "https://glebbahmutov.com/blog/rolling-for-test/": "2021-06-15",
-  "https://glebbahmutov.com/blog/tested-live-documentation/": "2021-06-15",
-  "https://glebbahmutov.com/blog/vuepress-conditional-testing/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-es6-module-in-cypress-electron/": "2021-06-15",
-  "https://glebbahmutov.com/blog/drive-by-testing-array-explorer/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-vue-cli-reload/": "2021-06-15",
-  "https://glebbahmutov.com/blog/json-schema-for-the-win/": "2021-06-15",
-  "https://glebbahmutov.com/blog/testing-svelte-store/": "2021-06-15",
-  "https://glebbahmutov.com/blog/cypress-tips-and-tricks/": "2022-12-07",
-  "https://glebbahmutov.com/blog/connecting-crash-reporting-with-end-to-end-tests/": "2022-03-29",
-  "https://glebbahmutov.com/blog/parallel-end-to-end-testing/": "2021-06-15",
-  "https://glebbahmutov.com/blog/immutable-deploys-with-data-and-testing/": "2021-06-15",
-  "https://glebbahmutov.com/blog/web-testing-nirvana-with-cypress/": "2021-06-15"
-}
+[
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-slash-command/",
+    "title": "Cypress GitHub Actions Slash Command",
+    "subtitle": "How to run Cypress tests by making a pull request comment.",
+    "modified": "2023-04-25"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-todomvc-questions/",
+    "title": "Cypress TodoMVC Questions Answered",
+    "subtitle": "Answers to some questions about TodoMVC tests from my Cypress workshop.",
+    "modified": "2023-04-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/simplify-calendar-test/",
+    "title": "Simplify Cypress Calendar Test Example",
+    "subtitle": "Step by step guide to make a test dramatically simpler.",
+    "modified": "2023-04-20"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/pass-values-between-tests/",
+    "title": "Pass Values Between Cypress Tests",
+    "subtitle": "Use Cypress.env object to pass values from one test to another, if you really need to.",
+    "modified": "2023-04-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cloudscape-select/",
+    "title": "Testing Cloudscape Design Select Component",
+    "subtitle": "Writing an end-to-end Cypress test picking an option from the Cloudscape Design React Select component.",
+    "modified": "2023-04-12"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-the-swag-store-course/",
+    "title": "Testing The Swag Store Cypress.io Course",
+    "subtitle": "My Cypress.io testing course has grown a lot.",
+    "modified": "2023-04-20"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/full-cy-code-coverage/",
+    "title": "Full Code Coverage For Free",
+    "subtitle": "A very easy way of running E2E and component Cypress specs in parallel and combining the code coverage reports using GH Actions.",
+    "modified": "2023-04-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fix-for-cypress-plugin-events/",
+    "title": "Fix For Cypress Plugin Events",
+    "subtitle": "A simple fix for the Cypress bug 22428 that only executes the last registered plugin.",
+    "modified": "2023-04-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-level-up-workshop/",
+    "title": "Cypress Level Up Online Workshop April 2023",
+    "subtitle": "Helping people affected by the recent tech layoffs by giving away an online workshop.",
+    "modified": "2023-03-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/retry-or-not/",
+    "title": "Retry Or Not",
+    "subtitle": "How to dynamically determine if a Cypress test should be retried or not based on the error.",
+    "modified": "2023-03-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/upgrade-cypress-v9-to-v12/",
+    "title": "Upgrade Cypress From Version 9 to Version 12",
+    "subtitle": "How we have upgraded Cypress from v9.7.0 to v12.7.0 with code examples.",
+    "modified": "2023-03-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/minimize-mailosaur-use/",
+    "title": "Minimize Mailosaur Use",
+    "subtitle": "How to avoid the high Mailosaur costs when running Cypress email tests.",
+    "modified": "2023-03-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/trigger-cypress-specs/",
+    "title": "Trigger Selected Cypress Specs Using GitHub Actions",
+    "subtitle": "How to quickly run selected Cypress specs via GitHub manual dispatch workflow.",
+    "modified": "2023-03-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/split-react-native-component-tests/",
+    "title": "Split React Native Web Component Tests For Free",
+    "subtitle": "Execute RN component tests in parallel using cypress-split plugin.",
+    "modified": "2023-02-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/crawl-weather/",
+    "title": "Crawl Weather Using Cypress",
+    "subtitle": "An edge-case when I would use tests that depend on each other.",
+    "modified": "2023-02-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/child-window-closed/",
+    "title": "Test Child Window Closed Scenario",
+    "subtitle": "Testing how the parent window is watching the child window closed property.",
+    "modified": "2023-02-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/debug-cy-get-and-contains/",
+    "title": "Debug Cypress Commands cy.get And cy.contains",
+    "subtitle": "How I would debug a Cypress test failing to find an item.",
+    "modified": "2023-02-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/setup-cypress-data/",
+    "title": "The Zen Of Cypress Data Setup",
+    "subtitle": "How to prepare the setup data without needing async / await in your specs.",
+    "modified": "2023-02-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/two-cypress-tricks/",
+    "title": "Two Simple Tricks To Make Your Cypress Tests Better",
+    "subtitle": "Two very simple ideas to immediately improve your Cypress tests.",
+    "modified": "2023-02-05"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/react-native-web-component-testing/",
+    "title": "React Native Web Component Testing Using Cypress And Vite",
+    "subtitle": "Bundle React Native app using Vite to run on the web and write Cypress component tests.",
+    "modified": "2023-02-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/trying-arrow-js/",
+    "title": "Trying ArrowJS",
+    "subtitle": "Trying the tiny framework Arrow.js with Vite and Cypress.",
+    "modified": "2023-02-02"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/csrf-testing/",
+    "title": "Cypress CSRF Form Testing",
+    "subtitle": "How to make API requests to endpoints protected against cross-site request forgery.",
+    "modified": "2023-02-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/the-awesome-battle/",
+    "title": "The Battle of Cypress Mochawesome Reporters",
+    "subtitle": "Generating full HTML reports with screenshots and videos using several Cypress Mochawesome reporters.",
+    "modified": "2023-01-30"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-location/",
+    "title": "Stub The Unstubbable",
+    "subtitle": "Stub and test the window.location methods by wrapping the object.",
+    "modified": "2023-01-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-mochawesome/",
+    "title": "Cypress Mochawesome HTML Reports",
+    "subtitle": "Generate and store test reports and artifacts on GitHub Actions.",
+    "modified": "2023-01-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-parallel-free/",
+    "title": "Run Cypress Specs In Parallel For Free",
+    "subtitle": "How to use the `cypress-split` plugin to speed up your Cypress tests on CI.",
+    "modified": "2023-01-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/required-tags/",
+    "title": "Required Tags",
+    "subtitle": "How to use `cy-grep` plugin to run tests ONLY when a specific tag is specified.",
+    "modified": "2023-01-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cy-table/",
+    "title": "Test HTML Tables Using cy.table Query Command",
+    "subtitle": "Use the `cy.table` to get the HTML table values or slices in your Cypress tests.",
+    "modified": "2023-01-21"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/better-cypress-log/",
+    "title": "A Better Cypress Log Command",
+    "subtitle": "I have a lot of problems with the cy.log command and now I wrote a replacement called cy.print.",
+    "modified": "2023-01-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/load-cypress-env-settings/",
+    "title": "How To Load Cypress Settings Per Environment",
+    "subtitle": "Load the testing configuration and environment variables from separate JSON files.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-env-variable/",
+    "title": "Use Cypress Task To Avoid Cypress Env Variable",
+    "subtitle": "Using the operating system environment variable to avoid injecting Cypress variable into the browser.",
+    "modified": "2023-01-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/trace-changed-specs/",
+    "title": "Run Changed Traced Specs On GitHub Actions",
+    "subtitle": "How to accurately Cypress.io specs to run first when using GitHub Actions",
+    "modified": "2023-01-20"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-soft-assertions/",
+    "title": "Cypress Needs Soft Assertions",
+    "subtitle": "A small proof of concept of adding soft assertions to Cypress tests.",
+    "modified": "2022-12-19"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-failed-tests/",
+    "title": "Run Just The Failed Tests In Cypress",
+    "subtitle": "How to run the failed tests from DevTools Console using @bahmutov/cy-grep plugin.",
+    "modified": "2022-12-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-mailosaur/",
+    "title": "Testing Email Flow Using Cypress and Mailosaur",
+    "subtitle": "How to confirm the emails sent using SendGrid work correctly.",
+    "modified": "2023-03-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-v12/",
+    "title": "Cypress V12 Is A Big Deal",
+    "subtitle": "How Cypress version 12 retries the chains of multiple query commands.",
+    "modified": "2022-12-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/skip-before-each-hook/",
+    "title": "Skip Before Each Hook",
+    "subtitle": "How a Cypress test can control the beforeEach hook behavior.",
+    "modified": "2022-12-08"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/slow-loading-jquery-plugin/",
+    "title": "Test A Slow-Loading jQuery Plugin",
+    "subtitle": "How to both simulate a slow-loading plugin and to wait for it to load from a Cypress test.",
+    "modified": "2022-12-08"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-polyfills/",
+    "title": "Test Polyfills",
+    "subtitle": "How a Cypress test can confirm the polyfill is working.",
+    "modified": "2022-12-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/inject-env/",
+    "title": "How To Inject Environment Variables Into Cypress Tests",
+    "subtitle": "How to pass specific environment variables into Cypress tests.",
+    "modified": "2023-01-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/spy-on-clipboard-copy/",
+    "title": "Spy On Clipboard Copy Method Call",
+    "subtitle": "Cypress tests can stub problematic browser API method calls.",
+    "modified": "2022-11-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/spy-on-postmessage/",
+    "title": "Spy On window.postMessage Calls",
+    "subtitle": "Cypress tests run in the browser and make it simple to spy or subscribe to the window events.",
+    "modified": "2022-11-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/tips-and-tricks-for-e2e/",
+    "title": "Tips And Tricks For Writing Fast And Maintainable Front-End Tests",
+    "subtitle": "My recent presentation about testing at AllThingsOpen conference.",
+    "modified": "2022-11-05"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/mock-process-env-in-react/",
+    "title": "Mock process.env In Your Cypress React Tests",
+    "subtitle": "How to mock the .env values in your Cypress end-to-end tests for React applications.",
+    "modified": "2022-10-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/text-input/",
+    "title": "Playing With DevExtreme Text Input",
+    "subtitle": "A common scenario for entering text using web widgets.",
+    "modified": "2022-10-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-devextreme-example/",
+    "title": "Cypress DevExtreme Example",
+    "subtitle": "Finding and testing DevExtreme components without good test selectors.",
+    "modified": "2022-10-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/spok-redux/",
+    "title": "Check Redux Store Using cy-spok",
+    "subtitle": "How to validate a Redux state using cy-spok plus dispatch actions from a Cypress test.",
+    "modified": "2022-10-17"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/split-test/",
+    "title": "Split A Test.Bash 2022 Test",
+    "subtitle": "How to spit a single Cypress test into several smaller isolated tests.",
+    "modified": "2022-10-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-bash-2022-ui-challenge/",
+    "title": "Solving Test.Bash 2022 UI Challenge With Cypress",
+    "subtitle": "Step-by-step tutorial for testing a simple web application.",
+    "modified": "2022-10-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-webkit/",
+    "title": "Run Cypress Tests Using WebKit Browser",
+    "subtitle": "How to efficiently use the newly released WebKit browser support to run Cypress tests locally and on CI.",
+    "modified": "2022-09-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/ui-to-api-to-app-actions/",
+    "title": "Change E2E Tests From UI To API To App Actions",
+    "subtitle": "How to write independent tests that do not duplicate the application's logic.",
+    "modified": "2022-09-25"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/dependent-test/",
+    "title": "Writing Tests That Depend On Other Tests",
+    "subtitle": "If you must use a Cypress anti-pattern, at least do it right using cypress-data-session plugin.",
+    "modified": "2023-04-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-component-testing-vs-angular-test-harness/",
+    "title": "Cypress Component Testing vs Angular Test Harness",
+    "subtitle": "A few Angular component test examples comparing Cypress and test harness.",
+    "modified": "2022-10-25"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-if/",
+    "title": "Conditional Commands For Cypress",
+    "subtitle": "How to write conditional commands using the cypress-if plugin.",
+    "modified": "2022-09-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-circleci-subfolders/",
+    "title": "Caching Cypress On CircleCI",
+    "subtitle": "How to cache Cypress when running app and the tests from subfolders of the repo.",
+    "modified": "2022-09-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-using-apis/",
+    "title": "You Should Test More Using APIs",
+    "subtitle": "How to verify that 3rd party services work using the cy.request API calls and cypress-recurse plugin.",
+    "modified": "2023-04-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-pdf/",
+    "title": "Test PDFs By Converting Them To HTML",
+    "subtitle": "How to download a PDF file, convert it to HTML, and load back to Cypress browser for more testing",
+    "modified": "2022-08-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/dark-cypress-tips/",
+    "title": "Adding Dark Theme to Cypress.Tips Site",
+    "subtitle": "How I added and tested a dark color theme at my site cypress.tips",
+    "modified": "2022-08-02"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-emulate-media/",
+    "title": "Emulate Media In Cypress Tests",
+    "subtitle": "How to set the \"prefers-color-scheme\" value in a Cypress test.",
+    "modified": "2022-07-23"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-js-to-ts/",
+    "title": "Convert Cypress Specs from JavaScript to TypeScript",
+    "subtitle": "While Cypress test is running you cannot insert or add new test commands from \"outside\"",
+    "modified": "2023-01-12"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-out-of-band/",
+    "title": "Cypress Cannot Add Out-Of-Band Commands",
+    "subtitle": "While Cypress test is running you cannot insert or add new test commands from \"outside\"",
+    "modified": "2022-07-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/component-code-coverage/",
+    "title": "Component Code Coverage in Cypress v10",
+    "subtitle": "How to instrument React component tests and produce the code coverage report.",
+    "modified": "2022-07-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-react-import/",
+    "title": "Stub an import from a Cypress v10 component test",
+    "subtitle": "How to bypass side effects in a Cypress React component test by stubbing the import.",
+    "modified": "2023-01-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-form-that-opens-2nd-tab/",
+    "title": "Stub The Form That Opens The Second Browser Tab",
+    "subtitle": "How Cypress can prevent a form from popping a second browser window.",
+    "modified": "2022-07-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/sinon-edge/",
+    "title": "Sinon Edge Cases",
+    "subtitle": "How to return difference values depending on the stub's arguments.",
+    "modified": "2022-06-30"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-v10-env/",
+    "title": "Cypress v10 Environment Variables",
+    "subtitle": "How to pass the user values to Cypress v10+ test runner.",
+    "modified": "2022-10-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-v10-tips/",
+    "title": "Cypress v10 Tips and Tricks",
+    "subtitle": "A few tips on getting the most out of E2E testing tool Cypress v10+",
+    "modified": "2023-03-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-app/",
+    "title": "Test App From Another Repo",
+    "subtitle": "How I run the Cypress tests against an application from a separate repository.",
+    "modified": "2022-06-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-all-specs-cypress-v10/",
+    "title": "Run All Specs in Cypress v10",
+    "subtitle": "How to run all or some specs using Cypress v10 where the Run all specs button has been removed.",
+    "modified": "2022-11-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/mobile-tests/",
+    "title": "How We Run The Mobile Web Browser Tests at Mercari US",
+    "subtitle": "How we use the UserAgent header to run the Cypress web mobile tests.",
+    "modified": "2022-05-19"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/pass-reference/",
+    "title": "Pass The Reference",
+    "subtitle": "How to write the correct instanceof assertions in Cypress tests.",
+    "modified": "2022-05-16"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/check-more-things/",
+    "title": "Check More Things Before Clicking",
+    "subtitle": "How I solved the Cypress flake when testing Next.js web app on GitHub Actions",
+    "modified": "2022-05-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/secrets-to-env/",
+    "title": "Set All Cypress Env Values Using A Single GitHub Actions Secret",
+    "subtitle": "You can pass an entire JSON object of values using a single GitHub Actions secret by saving it as cypress.env.json file.",
+    "modified": "2022-05-09"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/quick-click/",
+    "title": "A Quick React Component Test",
+    "subtitle": "Confirm the onClick handler is executed when clicking on the button component.",
+    "modified": "2022-05-05"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/spy-on-complex-method-call/",
+    "title": "Spy On A Complex Method Call",
+    "subtitle": "Checking if the window data layer method call was called with an expected argument.",
+    "modified": "2022-05-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/send-data-to-the-test/",
+    "title": "Send Data From The Application To The Cypress Test",
+    "subtitle": "The application can provide more information to the test runner for more meaningful end-to-end tests.",
+    "modified": "2022-05-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/login-words/",
+    "title": "Log in Using Collected Words",
+    "subtitle": "How to collect information from the page and conditionally type it.",
+    "modified": "2022-05-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/listen-to-the-message/",
+    "title": "Listen To The Message",
+    "subtitle": "How Cypress test can confirm the message sent by the application via window.postMessage call.",
+    "modified": "2022-04-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/rendered-font/",
+    "title": "The Rendered Font",
+    "subtitle": "How to query the element to find out what font was really rendered.",
+    "modified": "2022-04-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/solve-the-first-click/",
+    "title": "Solve The First Click",
+    "subtitle": "How I found and solved the missing first click problem happening on continuous integration service.",
+    "modified": "2022-04-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-module-problem/",
+    "title": "Cypress Module Problem",
+    "subtitle": "How to solve the \"type module\" error that appears when mixing ES6 modules with Cypress plugins.",
+    "modified": "2022-04-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/when-can-the-test-click/",
+    "title": "When Can The Test Click",
+    "subtitle": "How to wait for the application to attach event listeners before calling the cy.click command.",
+    "modified": "2022-04-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/visible-in-the-viewport/",
+    "title": "Elements Visible In The Current Viewport",
+    "subtitle": "How to check if the loading elements disappeared in the current viewport without checking the outside ones.",
+    "modified": "2022-04-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/app-loaded/",
+    "title": "When Has The App Loaded",
+    "subtitle": "How to wait for the application to load data before testing it.",
+    "modified": "2022-03-31"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-via-window/",
+    "title": "Stub Objects By Passing Them Via Window Property",
+    "subtitle": "How to change the internal application objects during Cypress tests by assigning them to the window property.",
+    "modified": "2023-01-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/css-animations/",
+    "title": "How Cypress Freezes CSS Animations And You Can Too",
+    "subtitle": "How Cypress disables CSS animations to take deterministic screenshots, and how you could use the same approach during the tests to stop skip transitions.",
+    "modified": "2022-03-29"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/negative-assertions-and-missing-states/",
+    "title": "Negative Assertions And Missing States",
+    "subtitle": "Negative applications do not eliminate enough states to accurately tell what the application is doing right now.",
+    "modified": "2022-03-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fixture-and-request/",
+    "title": "Compare The Response To A Fixture",
+    "subtitle": "How to make a network request and compare the server response to a fixture file.",
+    "modified": "2022-03-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-tdd/",
+    "title": "Cypress Test-Driven Development Example",
+    "subtitle": "How to implement a web application feature while writing API and E2E tests using Cypress test runner.",
+    "modified": "2022-03-21"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/better-cy-each/",
+    "title": "A Better cy.each Iteration",
+    "subtitle": "How to iterate over elements and even perform an early stop.",
+    "modified": "2022-03-16"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-lighthouse/",
+    "title": "Cypress Lighthouse Example",
+    "subtitle": "Getting the Lighthouse performance metrics from a Cypress test.",
+    "modified": "2022-03-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-nextjs-app/",
+    "title": "Code Coverage For Nextjs Application",
+    "subtitle": "How to collect TypeScript code coverage using Cypress End-to-End tests.",
+    "modified": "2022-07-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-and-launchdarkly/",
+    "title": "Control LaunchDarkly From Cypress Tests",
+    "subtitle": "How to set the feature flag values using targeting to test each variation.",
+    "modified": "2022-09-23"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/visualize-cypress-command-queue/",
+    "title": "Visualize Cypress Command Queue",
+    "subtitle": "How to see the scheduled test command using cypress-command-chain plugin.",
+    "modified": "2022-07-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/replace-and-remove-cy-then-command/",
+    "title": "Replace The cy.then Command",
+    "subtitle": "How to replace the confusing cy.then command with the less confusing cy.later command.",
+    "modified": "2022-02-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/incremental-post-scraping/",
+    "title": "Incremental Blog Scraping",
+    "subtitle": "How to scrape the changed blog posts and upload to Algolia.",
+    "modified": "2022-02-18"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/email-cypress-report/",
+    "title": "Email Cypress Test Report",
+    "subtitle": "Email Cypress test results using cypress-email-results plugin.",
+    "modified": "2023-03-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/react-app-actions/",
+    "title": "Control React Applications From Cypress Tests",
+    "subtitle": "How to access and change the internal component state from end-to-end tests using cypress-react-app-actions.",
+    "modified": "2022-02-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/react-state-from-e2e-tests/",
+    "title": "Access React Components From Cypress E2E Tests",
+    "subtitle": "How to access the internal React component state from Cypress end-to-end tests.",
+    "modified": "2022-02-05"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/repeat-tests/",
+    "title": "Repeating Tests",
+    "subtitle": "How to run the same test or spec files again and again by launching it from GitHub Actions page.",
+    "modified": "2022-02-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-history-api-example/",
+    "title": "Cypress History API Example",
+    "subtitle": "Accessing the browser History API from the Cypress tests.",
+    "modified": "2022-01-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/wordle-page-objects/",
+    "title": "Wordle Page Objects",
+    "subtitle": "Solving different Wordle game implementations via Page Objects",
+    "modified": "2022-01-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/network-requests-with-cypress/",
+    "title": "How To Check Network Requests Using Cypress",
+    "subtitle": "How to validate the network intercept using Cypress tests.",
+    "modified": "2022-01-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/pick-tests-using-pull-request/",
+    "title": "Pick Tests To Run Using The Pull Request Text",
+    "subtitle": "How to select the tests to run using the GitHub pull request checkboxes.",
+    "modified": "2022-05-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/visit-non-html-page/",
+    "title": "Visit Non-HTML Page",
+    "subtitle": "How to make Cypress visit a JSON response for example.",
+    "modified": "2022-01-20"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/know-your-tests/",
+    "title": "Know Your Tests",
+    "subtitle": "Find Cypress specs and list all tests and their tags from the command line.",
+    "modified": "2022-01-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/tag-tests/",
+    "title": "How To Tag And Run End-to-End Tests",
+    "subtitle": "How to tag your Cypress tests to make sure anyone can quickly test the changes.",
+    "modified": "2022-09-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/crawl-using-cypress/",
+    "title": "Crawl Local Pages Using Cypress",
+    "subtitle": "How to visit every local page from a Cypress test to verify it successfully loads.",
+    "modified": "2022-01-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/json-test-results/",
+    "title": "Cypress JSON Test Results",
+    "subtitle": "How to save the test results as a JSON file using a reporter or a plugin.",
+    "modified": "2022-01-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/browser-filesystem-api/",
+    "title": "Test Web Apps That Use The Browser FileSystem API",
+    "subtitle": "How to stub the browser FileSystem APIs from a Cypress test.",
+    "modified": "2021-12-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cyclope-intro/",
+    "title": "Save The Page On Test Failure",
+    "subtitle": "How to save the full HTML page using the cyclope plugin when a Cypress test fails.",
+    "modified": "2021-12-22"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-hosts-option/",
+    "title": "Cypress Hosts Option",
+    "subtitle": "How to test an HTTPS site locally using Cypress and a custom domain name.",
+    "modified": "2023-01-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/check-for-duplicates/",
+    "title": "Check Items For Duplicates",
+    "subtitle": "How detect duplicate content or attributes on the page from a Cypress test.",
+    "modified": "2021-12-18"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cy-now-and-state/",
+    "title": "Cypress internal commands cy.now and cy.state",
+    "subtitle": "Two Cypress internal commands cy.now and cy.state that you definitely should not use.",
+    "modified": "2021-12-17"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/faster-user-creation/",
+    "title": "Faster User Object Creation",
+    "subtitle": "How to create and cache the user object and session using cypress-data-session plugin.",
+    "modified": "2021-12-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/restart-server/",
+    "title": "Server Running Inside Cypress Plugin Process",
+    "subtitle": "How to run and restart the Express server inside the Cypress plugin process.",
+    "modified": "2021-12-12"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-timestamps/",
+    "title": "Add Timestamps To Cypress",
+    "subtitle": "Making debugging failed tests easier by adding timestamps to the information.",
+    "modified": "2022-12-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/3rd-party/",
+    "title": "Dealing With 3rd Party Scripts In Cypress Tests",
+    "subtitle": "How to ensure the external scripts are ready to be used when testing the site, plus how to test a chat widget.",
+    "modified": "2021-12-09"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/gh-reusable-workflows/",
+    "title": "The Simplest CI Setup For Running Cypress Tests",
+    "subtitle": "Run Cypress tests in parallel with zero configuration by reusing a GitHubActions workflow.",
+    "modified": "2021-12-08"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/spy-on-dom-methods/",
+    "title": "Spy On DOM Methods And Properties",
+    "subtitle": "How to detect from the Cypress tests when the application is calling DOM methods and even sets innerHTML.",
+    "modified": "2021-11-23"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fp-cy-helpers/",
+    "title": "Functional Helpers For Cypress Tests",
+    "subtitle": "Using functional programming to write retry-able assertion callbacks for checking if the table column is sorted.",
+    "modified": "2022-01-09"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/custom-assertions/",
+    "title": "Create Custom Assertions For Test Readability",
+    "subtitle": "How to extend Cypress with custom assertions.",
+    "modified": "2021-11-17"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/flaky-cy-type/",
+    "title": "Solve Flake In Cypress Typing Into An Input Element",
+    "subtitle": "How to work around flaky application when using cy.type and then solve the flake for good.",
+    "modified": "2021-11-16"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/parallelism-parameter/",
+    "title": "CircleCI Parallelism As A Parameter",
+    "subtitle": "Use workflow parameter to control the number of machines CircleCI is launching to run your tests faster when needed.",
+    "modified": "2021-11-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-sitemap/",
+    "title": "Test your sitemap using Cypress",
+    "subtitle": "How to load and parse sitemap XML resource and then confirm each page loads using the Cypress.io test runner.",
+    "modified": "2022-01-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-grep-filters/",
+    "title": "Faster test execution with cypress-grep",
+    "subtitle": "How to run filtered specs and tests faster using cypress-grep plugin.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-data-session/",
+    "title": "Flexible Cypress Data Setup And Validation",
+    "subtitle": "Setting up, caching, and re-creating the test data using cypress-data-session plugin.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/refactor-using-each/",
+    "title": "Refactor Tests To Be Independent And Fast Using Cypress-Each Plugin",
+    "subtitle": "How to generate tests and even separate specs using cypress-each plugin.",
+    "modified": "2021-10-19"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/dynamic-api-tests-using-cypress-each/",
+    "title": "Dynamic API Tests Using Cypress-Each Plugin",
+    "subtitle": "How to generate separate Cypress tests from an array using describe.each helper.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-and-testrail/",
+    "title": "Cypress And TestRail",
+    "subtitle": "How to send the Cypress test results to TestRail using cypress-testrail-simple plugin",
+    "modified": "2022-08-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-skills-ladder/",
+    "title": "Cypress Skills Ladder",
+    "subtitle": "A list of topics I would expect someone who is applying to write Cypress tests to know",
+    "modified": "2023-04-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/faster-ci-feedback-on-circleci/",
+    "title": "Get Faster Feedback From Your Cypress Tests Running On CircleCI",
+    "subtitle": "How to run the modified Cypress.io specs first when using CircleCI workflows",
+    "modified": "2022-04-12"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/faster-ci-feedback/",
+    "title": "Get Faster Feedback From Your Cypress Tests Running On GitHub Actions",
+    "subtitle": "How to run the modified Cypress.io specs first when using GitHub Actions",
+    "modified": "2023-03-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/request-graphql/",
+    "title": "Make GraphQL Calls From Cypress Tests",
+    "subtitle": "How to make GraphQL calls from Cypress tests using the cy.request command",
+    "modified": "2021-10-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/dynamic-tests-from-fixture/",
+    "title": "Dynamic Tests From Cypress Fixture",
+    "subtitle": "Import a JSON fixture file to create dynamic Cypress tests",
+    "modified": "2022-04-18"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-plain-or-markdown-file/",
+    "title": "Test Plain Or Markdown File Using Cypress",
+    "subtitle": "How to request a text file and validate the response using Cypress.",
+    "modified": "2022-01-20"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/skip-cypress-install-on-ci/",
+    "title": "Skip Cypress Install On CI",
+    "subtitle": "How to add Cypress to an existing large project without slowing down the continuous integration step.",
+    "modified": "2021-09-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/verify-phone-part-two/",
+    "title": "How To Verify Phone Number During Tests Part 2",
+    "subtitle": "How Cypress test can access the MySQL database during email verification step.",
+    "modified": "2021-09-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/verify-phone-part-one/",
+    "title": "How To Verify Phone Number During Tests Part 1",
+    "subtitle": "An example end-to-end testing approach to the web application that require phone number verification.",
+    "modified": "2021-09-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/detached/",
+    "title": "Solving The Element Is Detached From DOM Error In Cypress",
+    "subtitle": "A video of a page refreshing and breaking a Cypress test and several possible solutions.",
+    "modified": "2021-08-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/scrape-slides/",
+    "title": "Scrape Slides",
+    "subtitle": "How I scraped Reveal.js presentations using Cypress.io and sent the results to Algolia search index.",
+    "modified": "2021-08-21"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-chat-tests/",
+    "title": "Code Coverage For Chat App",
+    "subtitle": "How to measure fullstack code coverage from Cypress tests.",
+    "modified": "2021-08-16"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-video-play/",
+    "title": "Test Video Play Using Cypress",
+    "subtitle": "How to trigger and check if an HTML video element is playing using Cypress test runner.",
+    "modified": "2021-08-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/mock-network-from-server/",
+    "title": "Mock Network When Using Next.js getServerSideProps Call",
+    "subtitle": "How to run Next.js inside the Cypress plugin process to be able to stub network call made by the getServerSideProps call.",
+    "modified": "2021-08-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/listen-to-events/",
+    "title": "Listen To The Application Events From Cypress Tests",
+    "subtitle": "How the Cypress tests can receive the DOM and jQuery events sent by the application.",
+    "modified": "2021-08-08"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-pubsub/",
+    "title": "Control The Application Through PubSub From Cypress",
+    "subtitle": "How to use the PubSub instance inside the application to publish events during Cypress tests.",
+    "modified": "2021-08-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/visit-blank-page-between-tests/",
+    "title": "Visit The Blank Page Between Cypress Tests",
+    "subtitle": "Stop the web application and clearly separate the end-to-end tests by visiting the blank about page after each test.",
+    "modified": "2021-08-02"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/burn-tests-on-circle/",
+    "title": "Burn Cypress Tests on CircleCI",
+    "subtitle": "How to run a single test multiple times by using cypress-grep and CircleCI pipeline",
+    "modified": "2021-12-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/avoid-cypress-pyramid-of-doom/",
+    "title": "Avoid Cypress Pyramid of Doom",
+    "subtitle": "How to use aliases to access multiple values instead of nesting multiple then callbacks.",
+    "modified": "2023-04-14"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/control-nextjs-data-during-tests/",
+    "title": "Control Next.js Server-Side Data During Cypress Tests",
+    "subtitle": "How to modify the data passed from the server through props to Next.js React application when running end-to-end tests.",
+    "modified": "2022-08-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-feature-flags/",
+    "title": "Test Feature Flags Using Cypress and Flagsmith",
+    "subtitle": "How to control the web application feature flags during end-to-end tests.",
+    "modified": "2022-03-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/rn-test-for-navigation/",
+    "title": "Testing React Native Navigation",
+    "subtitle": "How to confirm the navigation work in RN apps running through Expo.",
+    "modified": "2021-07-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-app-using-the-keyboard/",
+    "title": "Testing A Web App Using The Keyboard Only",
+    "subtitle": "How to test a TodoMVC using Cypress using only the keyboard to confirm the app is accessible.",
+    "modified": "2021-07-12"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/why-cy-log-prints-nothing/",
+    "title": "Why cy.log Prints Nothing",
+    "subtitle": "Why cy.log command prints null or undefined even if the variable is set by the Cypress test.",
+    "modified": "2023-01-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/how-to-keep-cypress-tests-in-another-repo-with-circleci/",
+    "title": "How to Keep Cypress Tests in Another Repo While Using CircleCI",
+    "subtitle": "How to keep the tests in sync with the features, while keeping them in separate repositories and running CircleCI workflows.",
+    "modified": "2022-04-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-second-tab/",
+    "title": "Deal with Second Tab in Cypress",
+    "subtitle": "How to handle the web application opening a new tab or browser window when running inside Cypress test.",
+    "modified": "2023-03-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/how-to-keep-cypress-tests-in-another-repo/",
+    "title": "How to Keep Cypress Tests in Another Repo While Using GitHub Actions",
+    "subtitle": "How to keep the tests in sync with the features, while keeping them in separate repositories.",
+    "modified": "2022-04-30"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-real-events/",
+    "title": "Cypress Real Events Plugin",
+    "subtitle": "Solving the missing autocomplete popup using the cypress-real-events plugin by Dmitriy Kovalenko.",
+    "modified": "2021-06-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/sync-two-cypress-runners/",
+    "title": "Sync Two Cypress Runners via Checkpoints",
+    "subtitle": "How to force two Cypress test runners to wait for each other while testing a real-time chat app.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/sanity-test/",
+    "title": "Sanity Test for Landing Page",
+    "subtitle": "How to catch common page errors using a quick Cypress test.",
+    "modified": "2021-06-23"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-rn-todo-app/",
+    "title": "Testing React Native Todo Application Using Cypress",
+    "subtitle": "Integration tests for a React Native application running in the browser using Expo with network control, code coverage, visual, and a11y testing.",
+    "modified": "2021-07-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stubbing-the-non-configurable/",
+    "title": "Stubbing The Non-configurable",
+    "subtitle": "How Cypress test can stub a method defined with property descriptor configurable false",
+    "modified": "2021-06-18"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-react-native-app-using-cypress/",
+    "title": "The Complete Guide to Testing React Native App Using Cypress",
+    "subtitle": "We can test a React Native application using Cypress end-to-end test runner while running it in the Web mode using Expo.",
+    "modified": "2023-02-03"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-two-cypress-runners/",
+    "title": "Run Two Cypress Test Runners At The Same Time",
+    "subtitle": "How to test a real-time Socket.io chat app by running two Cypress test runners concurrently.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-vs-other-test-runners/",
+    "title": "Cypress vs Other Test Runners",
+    "subtitle": "How Cypress works under the hood, and how its architecture compares to other test runners.",
+    "modified": "2022-04-26"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-socketio-chat-using-cypress/",
+    "title": "Test a Socket.io Chat App using Cypress",
+    "subtitle": "How to write simple test for a real-time chat web application.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-automation/",
+    "title": "Cypress Automation",
+    "subtitle": "Using Chrome Debugger Protocol from Cypress",
+    "modified": "2023-01-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/burning-tests/",
+    "title": "Burning Tests with cypress-grep",
+    "subtitle": "How to run the same test again and again to confirm it is flake-free",
+    "modified": "2022-08-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/npm-tips-and-tricks/",
+    "title": "Node and NPM Tips and Tricks",
+    "subtitle": "Little Node and NPM secrets I learnt along the way",
+    "modified": "2023-03-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/answer-cypress-question/",
+    "title": "How I Answer a Cypress Question",
+    "subtitle": "How I answer a typical user question with a tested Cypress example",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/scrape-list-of-slides/",
+    "title": "Scraping the List of Presentation Slides",
+    "subtitle": "How to use Cypress to scrape the list of public presentations at slides.com",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-request-and-cookies/",
+    "title": "Cypress request and cookies",
+    "subtitle": "How to use cy.request, window.fetch, and cy.task commands to make HTTP requests to the server with and without cookies",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-mongo-with-cypress/",
+    "title": "Testing Mongo with Cypress",
+    "subtitle": "How to access the MongoDB during Cypress API tests locally and on CircleCI",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/writing-tests-progress/",
+    "title": "Writing Tests Progress",
+    "subtitle": "How to track the written tests using the Cypress test statuses",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-test-statuses/",
+    "title": "Cypress Test Statuses",
+    "subtitle": "How to track the written tests using the Cypress test statuses",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fixtures-in-custom-commands/",
+    "title": "Load Fixtures from Cypress Custom Commands",
+    "subtitle": "How to load or import fixtures to be used in the Cypress custom commands",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-window-track/",
+    "title": "Stub window.track",
+    "subtitle": "How to stub the event analytics method window.track.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fast-esbuild/",
+    "title": "Fast Cypress spec bundling using ESBuild",
+    "subtitle": "Measuring how fast esbuild bundles Cypress specs",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-window-open/",
+    "title": "Stub window.open",
+    "subtitle": "How to stub the window.open method for every window",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/organize-npm-scripts/",
+    "title": "How I Organize my NPM Scripts",
+    "subtitle": "The typical script names in package.json and how I run them",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/write-cypress-preprocessor/",
+    "title": "Write Cypress Markdown Preprocessor",
+    "subtitle": "How to write a file preprocessor for bundling Cypress specs",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/canvas-testing/",
+    "title": "Canvas Visual Testing with Retries",
+    "subtitle": "How to visually compare a rendered Canvas with retry-ability",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-recurse/",
+    "title": "Writing Cypress Recurse Function",
+    "subtitle": "A collection of videos about writing cypress-recurse NPM module",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/anchor-ping/",
+    "title": "How to Test Anchor Ping",
+    "subtitle": "How to confirm the browser sends POST request when you use anchor ping attribute.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/tested-ecommerce/",
+    "title": "Deploy E-Commerce Site to Netlify and Test Using GitHub Actions",
+    "subtitle": "How to test a site deployed to Netlify by starting a GitHub Actions workflow.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/onbeforeunload/",
+    "title": "window.onbeforeunload and Cypress",
+    "subtitle": "Prevent Test Runner hanging when the application uses confirmation dialog in window.onbeforeunload callback",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-timezones/",
+    "title": "Testing Time Zones in Parallel",
+    "subtitle": "Running the same Cypress tests with different browser time zones in parallel",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-monorepo-apps/",
+    "title": "How to Test Monorepo Apps Using Cypress GitHub Action",
+    "subtitle": "How to run different GitHub workflows depending on the changed files",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-netlify/",
+    "title": "Test Sites Deployed To Netlify Using netlify-plugin-cypress",
+    "subtitle": "Test a site after deploying it to Netlify preview or production environment.",
+    "modified": "2023-04-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/form-validation-in-cypress/",
+    "title": "HTML Form Validation in Cypress",
+    "subtitle": "How to check if the form is valid before submitting it.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/local-cypress/",
+    "title": "How to Avoid Using Global Cypress Variables",
+    "subtitle": "Avoid clashing global types between Cypress and Jest by using local-cypress library.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/solve-the-user-problem/",
+    "title": "Solve The User Problem",
+    "subtitle": "Resolving a user issue through the most appropriate series of actions",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/parallel-cypress-tests-gh-action/",
+    "title": "Split Long GitHub Action Workflow Into Parallel Cypress Jobs",
+    "subtitle": "An example of splitting a GitHub Actions testing workflow into several jobs.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-geolocation/",
+    "title": "Debugging Cypress Geolocation Problem",
+    "subtitle": "An investigation into a hanging application that required geolocation access during Cypress test.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/publishing-cypress-command/",
+    "title": "How to Publish Custom Cypress Command on NPM",
+    "subtitle": "How to test, transpile, and publish an NPM module with a custom Cypress command.",
+    "modified": "2022-07-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/circle-ram-disk/",
+    "title": "Start CircleCI Machines Faster by Using RAM Disk",
+    "subtitle": "How to make sure the CI machines are not IO-limited when running Cypress tests in parallel on CircleCI machines",
+    "modified": "2021-08-10"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/negative-assertions/",
+    "title": "Be Careful With Negative Assertions",
+    "subtitle": "Because negative assertions can pass for the wrong reason.",
+    "modified": "2022-03-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/backend-coverage/",
+    "title": "Backend Code Coverage from Cypress API tests",
+    "subtitle": "How to cover the entire backend code using Cypress API tests.",
+    "modified": "2023-04-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/writing-custom-cypress-command/",
+    "title": "Writing a Custom Cypress Command",
+    "subtitle": "A tutorial explaining how to write a custom Cypress command with retry-ability.",
+    "modified": "2022-08-11"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/split-spec/",
+    "title": "Make Cypress Run Faster by Splitting Specs",
+    "subtitle": "Split the long-running spec into smaller specs in a subfolder.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-intercept-problems/",
+    "title": "Cypress cy.intercept Problems",
+    "subtitle": "A few common cy.intercept gotchas and how to avoid them",
+    "modified": "2022-06-02"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-timings/",
+    "title": "Cypress Timings",
+    "subtitle": "How to see the individual command timings.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/debug-visibility/",
+    "title": "Debug the Element Visibility Problems in Cypress",
+    "subtitle": "How to step through the visibility code to determine why Cypress thinks an element is invisible during the test",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/repeat-to-fight-flake/",
+    "title": "Repeat Test to Fight Flake",
+    "subtitle": "Repeat the same test and the entire project to find flakey tests",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/do-not-let-cypress-cache-snowball/",
+    "title": "Do Not Let Cypress Cache Snowball on CI",
+    "subtitle": "Do not use lax restore cache keys or your Cypress cache will blow up in size",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cy-metaprogramming/",
+    "title": "Cypress Metaprogramming",
+    "subtitle": "When the failing test is the passing test",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/universal-code-test/",
+    "title": "Universal Code Test with Cypress",
+    "subtitle": "How to confirm that universal JavaScript code outputs the same result in the browser as it does in Node.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/effective-react-tests/",
+    "title": "Effective React Tests",
+    "subtitle": "How to write effective React tests using Cypress",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-csp-almost/",
+    "title": "Testing Content-Security-Policy using Cypress ... Almost",
+    "subtitle": "How to almost test Content-Security-Policy violations in your site using Cypress",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-wasm-example/",
+    "title": "Cypress WASM Example",
+    "subtitle": "How to load and test WASM code using Webpack and test it using Cypress",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-and-xstate/",
+    "title": "Access XState from Cypress Test",
+    "subtitle": "How to access the XState state machine from Cypress test to verify the current context, observe events, and drive the app via actions",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cy-route-vs-route2/",
+    "title": "Difference between cy.route and cy.route2",
+    "subtitle": "The new command cy.route2 is everything one needs to spy and stub network requests from the application under test",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/smart-graphql-stubbing/",
+    "title": "Smart GraphQL Stubbing in Cypress",
+    "subtitle": "How to spy on and stub GraphQL calls from the application using Cypress and its new cy.route2 API",
+    "modified": "2023-04-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/wrap-cypress-using-npm/",
+    "title": "Wrap Cypress Using NPM Module API",
+    "subtitle": "How to wrap Cypress commands using its NPM module API to customize the test runner behavior.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/components-people-test/",
+    "title": "Components People Test",
+    "subtitle": "How to test individual React components the same way as end-to-end web applications.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-book/",
+    "title": "Cypress Book",
+    "subtitle": "Generate web application tutorials using real Cypress tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/develop-preview-test/",
+    "title": "Test the Preview Vercel Deploys",
+    "subtitle": "Run end-to-end Cypress tests against Vercel preview deploys using GitHub Actions",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/test-the-interface/",
+    "title": "Test The Interface Not The Implementation",
+    "subtitle": "Moving from Jest + RTL to Cypress + @testing-library/cypress for testing React components",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/why-cypress/",
+    "title": "Why Cypress?",
+    "subtitle": "Answers to three common questions from people skeptical about Cypress.",
+    "modified": "2021-10-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/first-vue-component-test/",
+    "title": "Write Your First Vue Component Test",
+    "subtitle": "Introducing cypress-vue-unit-test for better Vue component testing experience inside Cypress test runner.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/open-source-visual-testing-of-components/",
+    "title": "Visual testing for React components using open source tools",
+    "subtitle": "Comparing React components pixel by pixel to catch style problems",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/import-cypress-fixtures/",
+    "title": "Import Cypress fixtures",
+    "subtitle": "How to refactor loading JSON fixtures for simplicity",
+    "modified": "2022-03-24"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/tic-tac-toe-component-tests/",
+    "title": "Tic-Tac-Toe Component Tests",
+    "subtitle": "Moving from end-to-end to component and unit tests",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-all-specs/",
+    "title": "Be careful when running all specs together",
+    "subtitle": "A common mistake when using beforeEach hooks in Cypress specs",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/my-vision-for-component-tests/",
+    "title": "My Vision for Component Tests in Cypress",
+    "subtitle": "How I see end-to-end and component and unit tests working together",
+    "modified": "2022-01-13"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cleaning-up-space/",
+    "title": "Cleaning Up Space on Development Machine",
+    "subtitle": "How to prune unused Docker images, delete large node_modules, and clean old Cypress binaries",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-sentry-with-cypress/",
+    "title": "Testing Sentry Call with Cypress",
+    "subtitle": "How to verify Sentry call happens on an unhandled exception",
+    "modified": "2021-09-16"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/triple-tested/",
+    "title": "Triple Tested Static Site Deployed to GitHub Pages Using GitHub Actions",
+    "subtitle": "How to test static sites three times before and after deployment to GitHub pages.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/keep-passwords-secret-in-e2e-tests/",
+    "title": "Keep passwords secret in E2E tests",
+    "subtitle": "How to pass passwords and tokens during Cypress tests to avoid accidentally revealing them in screenshots, videos and logs",
+    "modified": "2022-04-27"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-talks/",
+    "title": "Cypress Talks",
+    "subtitle": "Collection of my talks about Cypress.io from recent conferences with videos and direct links to slides.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-fiddle/",
+    "title": "Run End-to-end Tests from Markdown Files",
+    "subtitle": "A way to test Cypress examples in Markdown files to guarantee their correctness.",
+    "modified": "2022-09-28"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-angular-application-via-app-actions/",
+    "title": "Testing Angular application via App Actions",
+    "subtitle": "How to bypass user interface to directly dispatch actions to Angular 8 application from Cypress end-to-end tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-using-child-window/",
+    "title": "Cypress using child window",
+    "subtitle": "How to test your site in a child window rather than iframe when using Cypress.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/patching-cypress-cli-npm-module/",
+    "title": "Patching Cypress CLI NPM module",
+    "subtitle": "How to patch fix installed NPM module to avoid waiting for an official bug fix.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/fix-low-contrast-with-cypress/",
+    "title": "Fix low contrast with Cypress",
+    "subtitle": "How to run accessability contrast test against a page to prevent low-contrast problem.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/detect-page-reload/",
+    "title": "Detect page reload from Cypress test",
+    "subtitle": "How to detect from Cypress test when a page reloads using object property assertions.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/realworld-app-action/",
+    "title": "How to write end-to-end test using app and api actions",
+    "subtitle": "How to bypass user interface when writing end-to-end tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/api-testing-with-server-logs/",
+    "title": "Black box API testing with server logs",
+    "subtitle": "How to perform end-to-end API testing using Cypress test runner and take advantage of server logs.",
+    "modified": "2023-02-04"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-cypress-included-from-docker-container/",
+    "title": "Run Cypress included from Docker container",
+    "subtitle": "How to test web application running on localhost using Cypress running inside a Docker container",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/ssr-e2e/",
+    "title": "End-to-end Testing for Server-Side Rendered Pages",
+    "subtitle": "How to validate SSR page using Cypress.io test runner",
+    "modified": "2022-12-09"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/combined-end-to-end-and-unit-test-coverage/",
+    "title": "Combined End-to-end and Unit Test Coverage",
+    "subtitle": "How to achieve 100% code coverage by combining end-to-end and unit tests without losing your sanity.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/code-coverage-by-parcel/",
+    "title": "Code Coverage by Parcel Bundler",
+    "subtitle": "How to instrument code on the fly using Parcel bundler and collect code coverage during end-to-end tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/using-ts-aliases-in-cypress-tests/",
+    "title": "Using TypeScript aliases in Cypress tests",
+    "subtitle": "How to configure TypeScript and Webpack path aliases to load application code from Cypress tests",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/code-coverage-for-e2e-tests/",
+    "title": "Code Coverage for End-to-end Tests",
+    "subtitle": "How to instrument application code and collect code coverage during Cypress E2E tests.",
+    "modified": "2021-10-06"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/stub-navigator-api/",
+    "title": "Stub navigator API in end-to-end tests",
+    "subtitle": "How to stub navigator API methods from Cypress E2E test.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/chainsaws/",
+    "title": "Testing an online chainsaw store using Cypress.io",
+    "subtitle": "Drive-by testing www.chainsawsdirect.com using Cypress.io test runner.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/readable-tests/",
+    "title": "Readable Cypress.io tests",
+    "subtitle": "How to write readable tests using custom commands and custom Chai assertions.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-visually/",
+    "title": "Testing how an application renders a drawing with Cypress and Percy.io",
+    "subtitle": "End-to-end testing a rendered pizza using Cypress.io test runner and image diffing Percy.io plugin.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-a-chart/",
+    "title": "Testing a chart with Cypress and Applitools",
+    "subtitle": "End-to-end testing an SVG chart using Cypress.io test runner and image diffing Applitools plugin.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/parallel-or-not/",
+    "title": "Parallel or not",
+    "subtitle": "This blog post shows how to configure CircleCI to run Cypress in parallel mode for internal branches, while only use a single machine to run Cypress tests for external pull requests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/zeit-now-v2-workflow/",
+    "title": "Zeit Now v2 workflow",
+    "subtitle": "A few tips on how to use Zeit Now v2 serverless with TypeScript and a little bit of testing.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/use-typescript-with-cypress/",
+    "title": "Use TypeScript With Cypress",
+    "subtitle": "Step by step tutorial how to set up TypeScript support in Cypress using WebPack bundler.",
+    "modified": "2022-12-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-is/",
+    "title": "Cypress is just ...",
+    "subtitle": "Cypress allows any developer to fundamentally change how it looks and works, because it is just JavaScript code running inside a browser backed by a Node app.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-should-callback/",
+    "title": "Cypress should callback",
+    "subtitle": "Use any assertion inside \"should(cb)\" function to have Cypress auto-retry its command with your assertion function.",
+    "modified": "2022-02-25"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/hyperapp-state-machine/",
+    "title": "Hyperapp state machine web app",
+    "subtitle": "How to write a web application using a state machine and Hyperapp framework.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/element-coverage/",
+    "title": "Element coverage for end-to-end tests",
+    "subtitle": "How to see which UI elements the end-to-end tests have interacted with.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-jump/",
+    "title": "Cypress jump",
+    "subtitle": "Create a React component using JSX and inject it into live application from a Cypress test.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/mock-graphql-with-lunar-in-cypress-tests/",
+    "title": "Mocking GraphQL with Lunar in Cypress End-to-End Tests",
+    "subtitle": "How to mock GraphQL endpoints using Lunar from Cypress tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/js-equality-game/",
+    "title": "Solving JS equality game with Cypress test runner",
+    "subtitle": "Using Cypress end-to-end test runner to automate solving JavaScript equality game.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/set-flag-to-start-tests/",
+    "title": "Set flag to start tests",
+    "subtitle": "How to wait for a slow-starting application to bootstrap before running end-to-end Cypress tests.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/run-and-group-tests/",
+    "title": "Run and group tests the way you want to",
+    "subtitle": "How to load balance multiple Cypress end-to-end tests in parallel mode, or group different tests together and in general control test runs in any way you want.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/should-i-start-with-cypress/",
+    "title": "Should I start with Cypress.io?",
+    "subtitle": "Should a person just starting in QA field learn how to use Cypress.io or Selenium.",
+    "modified": "2021-10-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/zeit-now-renovate-and-app/",
+    "title": "Zeit Now GitHub app + Renovate app + Cypress tests = 💝",
+    "subtitle": "How Cypress, Zeit Now GitHub app and Renovate app play well together to give you well tested PRs and keep your dependencies up to date with zero effort.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/gatsby-netlify-circle-and-cypress/",
+    "title": "Gatsby Netlify Circle and Cypress",
+    "subtitle": "How to test Gatsby static blog locally, on Netlify before deploying, and after deployment using Circle.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/powerful-cy-task/",
+    "title": "Incredibly Powerful cy.task",
+    "subtitle": "How to run any Node code from your end-to-end Cypress tests using `cy.task` command.",
+    "modified": "2022-06-01"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/rolling-for-test/",
+    "title": "Rolling for a Test",
+    "subtitle": "How to bundle individual components using Rollup for each Cypress test",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/tested-live-documentation/",
+    "title": "Tested live documentation is a thing with MDX, Docz and Cypress",
+    "subtitle": "You can quickly write live interactive component documentation and make sure it works as expected by testing it.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/vuepress-conditional-testing/",
+    "title": "VuePress and some Cypress end-to-end testing tips",
+    "subtitle": "Using DOM snapshot to catch a disappearing element plus sharing application config.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-es6-module-in-cypress-electron/",
+    "title": "Testing ES6 Module in Cypress Electron Browser",
+    "subtitle": "Adding support to script type=module while testing Hyperapp as ES6 module.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/drive-by-testing-array-explorer/",
+    "title": "Drive-by Testing Array Explorer",
+    "subtitle": "Step by step end-to-end testing project \"array-explorer\".",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-vue-cli-reload/",
+    "title": "Testing Vue CLI reload",
+    "subtitle": "Testing dev server hot reload using Cypress.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/json-schema-for-the-win/",
+    "title": "JSON schema for the win",
+    "subtitle": "How to get IntelliSense help for your JSON files in modern IDEs.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/testing-svelte-store/",
+    "title": "Testing Svelte Store",
+    "subtitle": "Writing E2E tests for Svelte.js app store using Cypress.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/cypress-tips-and-tricks/",
+    "title": "Cypress Tips and Tricks",
+    "subtitle": "A few tips on getting the most out of E2E testing tool Cypress",
+    "modified": "2022-12-07"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/connecting-crash-reporting-with-end-to-end-tests/",
+    "title": "Connecting crash reporting with end to end tests",
+    "subtitle": "How to send additional context for crashes that happen during E2E tests.",
+    "modified": "2022-03-29"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/parallel-end-to-end-testing/",
+    "title": "Parallel end to end testing with Cypress, Docker and GitLab",
+    "subtitle": "How to build multiple test bundles and run E2E test jobs in parallel.",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/immutable-deploys-with-data-and-testing/",
+    "title": "Immutable deploys with data and testing",
+    "subtitle": "How to roll over data when doing clean deploys using Zeit. Plus testing with Cypress!",
+    "modified": "2021-06-15"
+  },
+  {
+    "url": "https://glebbahmutov.com/blog/web-testing-nirvana-with-cypress/",
+    "title": "Web testing nirvana with Cypress",
+    "subtitle": "A short guide to using Cypress.io for feature testing web pages.",
+    "modified": "2021-06-15"
+  }
+]

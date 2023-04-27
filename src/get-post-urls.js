@@ -13,15 +13,23 @@ async function getBlogPostUrls() {
   // find all tags pointing at the blog posts
   // and put the full URL in the array
   const links = []
-  $('a.archive-article-title').each(function (k, el) {
-    const relativeUrl = $(el).attr('href')
+  $('article.archive-type-post').each(function (k, article) {
+    const titleAnchor = $(article).find('a.archive-article-title')
+    const title = $(titleAnchor).text().trim()
+    const subtitle = $(article).find('h2.archive-article-title').text().trim()
+    // console.log(title)
+    const relativeUrl = $(titleAnchor).attr('href')
     const fullUrl = new URL(relativeUrl, tagPageUrl)
 
     // const fullUrl =
     // console.log('%d: %s', k + 1, $(el).text())
     // console.log('%d: %s', k + 1, relativeUrl)
     // console.log('%d: %s', k + 1, fullUrl.href)
-    links.push(fullUrl.href)
+    links.push({
+      url: fullUrl.href,
+      title,
+      subtitle,
+    })
   })
 
   console.log('found %d links', links.length)

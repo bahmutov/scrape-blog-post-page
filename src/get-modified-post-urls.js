@@ -5,13 +5,13 @@ const { getSiteMap } = require('./get-sitemap')
 
 async function getModifiedPostUrls(saveFilename) {
   const [modified, posts] = await Promise.all([getSiteMap(), getBlogPostUrls()])
-  const cypressPostsWithModified = {}
-  posts.forEach((url) => {
-    if (!modified[url]) {
-      console.error('missing modified date for %s', url)
+  const cypressPostsWithModified = posts.map((post) => {
+    if (!modified[post.url]) {
+      console.error('missing modified date for %s', post.url)
     } else {
-      cypressPostsWithModified[url] = modified[url]
+      post.modified = modified[post.url]
     }
+    return post
   })
 
   if (saveFilename) {
