@@ -3,10 +3,10 @@ const fs = require('fs')
 const cheerio = require('cheerio')
 const { URL } = require('url')
 
-async function getBlogPostUrls() {
-  const tagPageUrl = 'https://glebbahmutov.com/blog/tags/cypress/'
+const cypressBlogPostsUrl = 'https://glebbahmutov.com/blog/tags/cypress/'
 
-  const res = await got(tagPageUrl)
+async function getBlogPostUrls() {
+  const res = await got(cypressBlogPostsUrl)
   // console.log(res.body)
   const $ = cheerio.load(res.body)
 
@@ -19,7 +19,7 @@ async function getBlogPostUrls() {
     const subtitle = $(article).find('h2.archive-article-title').text().trim()
     // console.log(title)
     const relativeUrl = $(titleAnchor).attr('href')
-    const fullUrl = new URL(relativeUrl, tagPageUrl)
+    const fullUrl = new URL(relativeUrl, cypressBlogPostsUrl)
 
     // const fullUrl =
     // console.log('%d: %s', k + 1, $(el).text())
@@ -36,7 +36,7 @@ async function getBlogPostUrls() {
   return links
 }
 
-module.exports = { getBlogPostUrls }
+module.exports = { getBlogPostUrls, cypressBlogPostsUrl }
 
 if (!module.parent) {
   getBlogPostUrls()
