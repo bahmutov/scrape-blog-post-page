@@ -19,7 +19,6 @@ module.exports = defineConfig({
       return require('./cypress/plugins/index.js')(on, config)
     },
     supportFile: false,
-    excludeSpecPattern: 'utils.js',
     baseUrl: 'https://glebbahmutov.com/blog/',
   },
 })
