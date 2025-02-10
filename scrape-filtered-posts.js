@@ -67,9 +67,16 @@ async function scrapeOnePost(url) {
   await markScraped(url)
 }
 
+/**
+ * @param {string[]} urls to scrape
+ */
 async function scrapeUrls(urls) {
+  let remainingN = urls.length
+
   for (let url of urls) {
     await scrapeOnePost(url)
+    remainingN -= 1
+    console.log('%d url(s) left to scrape', remainingN)
   }
 }
 
